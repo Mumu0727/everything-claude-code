@@ -6,3 +6,53 @@ scripts/release.sh
 
 # Plugin dev notes (not needed by consumers)
 .claude-plugin/PLUGIN_SCHEMA_NOTES.md
+
+# 测试文件
+tests/
+test/
+**/*.test.js
+**/*.test.ts
+**/*.spec.js
+**/*.spec.ts
+tdd-demo/
+
+# 开发文件
+.git/
+.github/
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+
+# 备份文件
+backup/
+*.backup
+*.bak
+*.tmp
+
+# 配置文件
+.env*
+.npmrc*
+
+# 构建输出
+dist/
+build/
+coverage/
+
+# 文档草稿
+docs/drafts/
+*.draft.md
+
+# 临时文件
+temp/
+tmp/
+*.temp
+
+# IDE 文件
+*.swp
+*.swo
+*~
+
+# 其他
+*.orig

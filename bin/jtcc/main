@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
-const { program } = require("commander");
-const path = require('path');
-const fs = require('fs');
+const { program } = require("./commander");
 
 // 读取 package.json 获取版本信息
 const pkg = require("../../package.json");
@@ -17,12 +15,60 @@ program
   .command("install")
   .description("安装 JTCC 插件到 Claude Code")
   .option('-f, --force', '强制重新安装')
-  .action((options) => {
+  .option('--dry-run', '预览安装计划而不实际安装')
+  .action(async (options) => {
     console.log("🚀 正在安装 JTCC 插件...");
     console.log(`📦 版本: ${pkg.version}`);
-    console.log("✅ JTCC 插件安装成功！");
-    if (options.force) {
-      console.log("🔄 强制安装模式已启用");
+
+    try {
+      const path = require('path');
+      const { spawn } = require('child_process');
+
+      // 获取项目根目录
+      const projectRoot = path.resolve(__dirname, '..', '..');
+      const installScript = path.join(projectRoot, 'scripts', 'install-apply.js');
+
+      // 构建安装命令参数
+      const args = ['--target', 'jtcc-claude-home', '--profile', 'jtcc-frontend'];
+      if (options.force) {
+        args.push('--force');
+        console.log("🔄 强制安装模式已启用");
+      }
+      if (options.dryRun) {
+        args.push('--dry-run');
+        console.log("🔍 预览模式：将显示安装计划但不实际安装");
+      }
+
+      console.log("📋 执行安装计划...");
+
+      // 执行安装脚本
+      const installProcess = spawn('node', [installScript, ...args], {
+        stdio: 'inherit',
+        cwd: projectRoot
+      });
+
+      installProcess.on('close', (code) => {
+        if (code === 0) {
+          if (options.dryRun) {
+            console.log("✅ 安装计划预览完成！");
+          } else {
+            console.log("✅ JTCC 插件安装成功！");
+            console.log("💡 现在你可以在 Claude Code 中使用 /jtcc:plan, /jtcc:tdd 等命令了");
+          }
+        } else {
+          console.error("❌ 安装失败，退出代码:", code);
+          process.exit(1);
+        }
+      });
+
+      installProcess.on('error', (error) => {
+        console.error("❌ 安装出现错误:", error.message);
+        process.exit(1);
+      });
+
+    } catch (error) {
+      console.error("❌ 安装失败:", error.message);
+      process.exit(1);
     }
   });
 

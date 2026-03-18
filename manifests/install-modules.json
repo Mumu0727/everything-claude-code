@@ -40,6 +40,110 @@
       "stability": "stable"
     },
     {
+      "id": "agents-frontend",
+      "kind": "agents",
+      "description": "Frontend-focused agent definitions for React, mobile, and UI development.",
+      "paths": [
+        "agents/planner.md",
+        "agents/architect.md",
+        "agents/tdd-guide.md",
+        "agents/code-reviewer.md",
+        "agents/security-reviewer.md",
+        "agents/build-error-resolver.md",
+        "agents/e2e-runner.md",
+        "agents/refactor-cleaner.md",
+        "agents/doc-updater.md",
+        "agents/kotlin-reviewer.md"
+      ],
+      "targets": [
+        "jtcc-claude-home"
+      ],
+      "dependencies": [],
+      "defaultInstall": true,
+      "cost": "light",
+      "stability": "stable"
+    },
+    {
+      "id": "commands-frontend",
+      "kind": "commands",
+      "description": "Frontend-focused command library for React, Next.js, and mobile development.",
+      "paths": [
+        "commands/plan.md",
+        "commands/tdd.md",
+        "commands/code-review.md",
+        "commands/e2e.md",
+        "commands/build-fix.md",
+        "commands/refactor-clean.md",
+        "commands/learn-eval.md",
+        "commands/evolve.md",
+        "commands/skill-create.md",
+        "commands/instinct-status.md",
+        "commands/projects.md",
+        "commands/promote.md",
+        "commands/save-session.md",
+        "commands/resume-session.md",
+        "commands/update-codemaps.md",
+        "commands/multi-frontend.md"
+      ],
+      "targets": [
+        "jtcc-claude-home"
+      ],
+      "dependencies": [],
+      "defaultInstall": true,
+      "cost": "medium",
+      "stability": "stable"
+    },
+    {
+      "id": "frontend-frameworks",
+      "kind": "skills",
+      "description": "Frontend framework skills for React, Next.js, Vue, Angular, and modern web development.",
+      "paths": [
+        "skills/frontend-patterns",
+        "skills/frontend-slides",
+        "skills/nextjs-turbopack",
+        "skills/compose-multiplatform-patterns"
+      ],
+      "targets": [
+        "jtcc-claude-home",
+        "claude",
+        "cursor"
+      ],
+      "dependencies": [
+        "platform-configs"
+      ],
+      "defaultInstall": false,
+      "cost": "medium",
+      "stability": "stable"
+    },
+    {
+      "id": "mobile-development",
+      "kind": "skills",
+      "description": "Mobile development skills for iOS, Android, and cross-platform development.",
+      "paths": [
+        "skills/android-clean-architecture",
+        "skills/kotlin-coroutines-flows",
+        "skills/kotlin-patterns",
+        "skills/kotlin-testing",
+        "skills/swift-actor-persistence",
+        "skills/swift-concurrency-6-2",
+        "skills/swift-protocol-di-testing",
+        "skills/swiftui-patterns",
+        "skills/liquid-glass-design",
+        "skills/foundation-models-on-device"
+      ],
+      "targets": [
+        "jtcc-claude-home",
+        "claude",
+        "cursor"
+      ],
+      "dependencies": [
+        "platform-configs"
+      ],
+      "defaultInstall": false,
+      "cost": "medium",
+      "stability": "stable"
+    },
+    {
       "id": "commands-core",
       "kind": "commands",
       "description": "Core slash-command library and command docs.",

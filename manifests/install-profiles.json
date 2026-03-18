@@ -12,6 +12,20 @@
         "workflow-quality"
       ]
     },
+    "jtcc-frontend": {
+      "description": "JTCC frontend-focused profile with React, Next.js, mobile, and logistics domain expertise.",
+      "modules": [
+        "rules-core",
+        "agents-frontend",
+        "commands-frontend",
+        "hooks-runtime",
+        "platform-configs",
+        "workflow-quality",
+        "frontend-frameworks",
+        "mobile-development",
+        "supply-chain-domain"
+      ]
+    },
     "developer": {
       "description": "Default engineering profile for most ECC users working across app codebases.",
       "modules": [

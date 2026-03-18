@@ -1,0 +1,16 @@
+# JTCC NPM发布配置
+# 这个文件包含npm发布到JT Express仓库的配置信息
+
+# npm仓库配置
+registry=https://maven.jtexpress.com.cn/nexus3/repository/npm-group-2/
+
+# 发布配置
+tag=latest
+access=public
+
+# 可选配置
+# 如果需要设置代理
+# proxy=http://proxy.company.com:8080
+# https-proxy=http://proxy.company.com:8080
+
+# 认证信息会在运行时设置，不要在此文件中存储敏感信息

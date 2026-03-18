@@ -1,11 +1,13 @@
 const antigravityProject = require('./antigravity-project');
 const claudeHome = require('./claude-home');
+const jtccClaudeHome = require('./jtcc-claude-home');
 const codexHome = require('./codex-home');
 const cursorProject = require('./cursor-project');
 const opencodeHome = require('./opencode-home');
 
 const ADAPTERS = Object.freeze([
   claudeHome,
+  jtccClaudeHome,
   cursorProject,
   antigravityProject,
   codexHome,
