@@ -91,11 +91,12 @@
     "llms.txt"
   ],
   "bin": {
+    "jtcc": "jtcc",
     "ecc": "scripts/ecc.js",
     "ecc-install": "scripts/install-apply.js"
   },
   "scripts": {
-    "postinstall": "echo '\\n  ecc-universal installed!\\n  Run: npx ecc typescript\\n  Compat: npx ecc-install typescript\\n  Docs: https://github.com/affaan-m/everything-claude-code\\n'",
+    "postinstall": "echo '\\n  🚀 JTCC v2.0 已安装!\\n  运行: jtcc status\\n  帮助: jtcc --help\\n  市场: jtcc marketplace\\n  文档: https://github.com/jtcc-dev/jtcc\\n'",
     "lint": "eslint . && markdownlint '**/*.md' --ignore node_modules",
     "harness:audit": "node scripts/harness-audit.js",
     "claw": "node scripts/claw.js",
@@ -106,6 +107,7 @@
     "coverage": "c8 --all --include=\"scripts/**/*.js\" --check-coverage --lines 80 --functions 80 --branches 80 --statements 80 --reporter=text --reporter=lcov node tests/run-all.js"
   },
   "dependencies": {
+    "commander": "^9.5.0",
     "sql.js": "^1.14.1"
   },
   "devDependencies": {
