@@ -1,6 +1,6 @@
-# Contributing to Everything Claude Code
+# Contributing to JTCC (JavaScript TypeScript Claude Code)
 
-Thanks for wanting to contribute! This repo is a community resource for Claude Code users.
+Thanks for wanting to contribute! JTCC is a specialized frontend development plugin for Claude Code, focused on React, Next.js, SwiftUI, and logistics domain expertise.
 
 ## Table of Contents
 
@@ -10,40 +10,51 @@ Thanks for wanting to contribute! This repo is a community resource for Claude C
 - [Contributing Agents](#contributing-agents)
 - [Contributing Hooks](#contributing-hooks)
 - [Contributing Commands](#contributing-commands)
-- [MCP and documentation (e.g. Context7)](#mcp-and-documentation-eg-context7)
-- [Cross-Harness and Translations](#cross-harness-and-translations)
+- [JTCC Marketplace](#jtcc-marketplace)
+- [Frontend Focus Guidelines](#frontend-focus-guidelines)
 - [Pull Request Process](#pull-request-process)
 
 ---
 
 ## What We're Looking For
 
-### Agents
-New agents that handle specific tasks well:
-- Language-specific reviewers (Python, Go, Rust)
-- Framework experts (Django, Rails, Laravel, Spring)
-- DevOps specialists (Kubernetes, Terraform, CI/CD)
-- Domain experts (ML pipelines, data engineering, mobile)
+### 🎯 Frontend-Focused Contributions
 
-### Skills
-Workflow definitions and domain knowledge:
-- Language best practices
-- Framework patterns
-- Testing strategies
-- Architecture guides
+JTCC specializes in frontend development. We welcome contributions in these areas:
 
-### Hooks
-Useful automations:
-- Linting/formatting hooks
-- Security checks
-- Validation hooks
-- Notification hooks
+#### Agents
+Frontend and mobile development specialists:
+- **Frontend reviewers**: React, Vue, Angular code review
+- **Mobile experts**: SwiftUI, Kotlin/Compose specialists
+- **Build specialists**: Webpack, Vite, Turbopack optimizers
+- **Performance experts**: Frontend performance and optimization
+- **Testing specialists**: E2E, unit testing for frontend frameworks
 
-### Commands
-Slash commands that invoke useful workflows:
-- Deployment commands
-- Testing commands
-- Code generation commands
+#### Skills
+Frontend workflows and modern development practices:
+- **React/Next.js patterns**: Advanced React patterns, Next.js best practices
+- **Mobile development**: SwiftUI, Kotlin Multiplatform, React Native
+- **Frontend tooling**: Build optimization, bundling strategies
+- **State management**: Zustand, Redux, Context patterns
+- **CSS/Styling**: Tailwind, Styled Components, CSS-in-JS
+- **TypeScript**: Advanced typing patterns for frontend
+
+#### Logistics Domain Skills
+Business logic for logistics and supply chain:
+- **Supply chain management**: Vendor management, procurement
+- **Transportation**: Route optimization, carrier management
+- **Warehousing**: Inventory management, fulfillment
+- **Trade compliance**: Customs, international shipping
+- **Returns processing**: Reverse logistics, RMA systems
+
+### ❌ Out of Scope
+
+JTCC focuses exclusively on frontend and logistics. These are **NOT** accepted:
+- Backend frameworks (Django, Rails, Spring Boot, Express)
+- Database technologies (PostgreSQL, MongoDB, Redis)
+- Infrastructure/DevOps (Docker, Kubernetes, CI/CD)
+- Server-side languages (Python, Go, Rust for backend use)
+- System administration tools
 
 ---
 
@@ -51,7 +62,7 @@ Slash commands that invoke useful workflows:
 
 ```bash
 # 1. Fork and clone
-gh repo fork affaan-m/everything-claude-code --clone
+gh repo fork Mumu0727/everything-claude-code --clone
 cd everything-claude-code
 
 # 2. Create a branch
@@ -59,8 +70,9 @@ git checkout -b feat/my-contribution
 
 # 3. Add your contribution (see sections below)
 
-# 4. Test locally
-cp -r skills/my-skill ~/.claude/skills/  # for skills
+# 4. Test with JTCC
+jtcc test my-skill           # for skills
+jtcc validate my-agent       # for agents
 # Then test with Claude Code
 
 # 5. Submit PR
@@ -453,7 +465,7 @@ How you tested this.
 
 ## Questions?
 
-- **Issues:** [github.com/affaan-m/everything-claude-code/issues](https://github.com/affaan-m/everything-claude-code/issues)
+- **Issues:** [github.com/Mumu0727/everything-claude-code/issues](https://github.com/Mumu0727/everything-claude-code/issues)
 - **X/Twitter:** [@affaanmustafa](https://x.com/affaanmustafa)
 
 ---

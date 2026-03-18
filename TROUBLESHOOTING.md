@@ -264,7 +264,7 @@ claude --version
 # Requires Claude Code 2.0+
 
 # Manual install (if marketplace fails)
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/Mumu0727/everything-claude-code.git
 cp -r everything-claude-code ~/.claude/plugins/ecc
 ```
 
@@ -396,7 +396,7 @@ find ~/.claude/plugins -name "*.sh" -exec dos2unix {} \;
 
  If you're still experiencing issues:
 
-1. **Check GitHub Issues**: [github.com/affaan-m/everything-claude-code/issues](https://github.com/affaan-m/everything-claude-code/issues)
+1. **Check GitHub Issues**: [github.com/Mumu0727/everything-claude-code/issues](https://github.com/Mumu0727/everything-claude-code/issues)
 2. **Enable Debug Logging**:
    ```bash
    export CLAUDE_DEBUG=1

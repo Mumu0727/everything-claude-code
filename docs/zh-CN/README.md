@@ -2,9 +2,9 @@
 
 # Everything Claude Code
 
-[![Stars](https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/stargazers)
-[![Forks](https://img.shields.io/github/forks/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/network/members)
-[![Contributors](https://img.shields.io/github/contributors/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/Mumu0727/everything-claude-code?style=flat)](https://github.com/Mumu0727/everything-claude-code/stargazers)
+[![Forks](https://img.shields.io/github/forks/Mumu0727/everything-claude-code?style=flat)](https://github.com/Mumu0727/everything-claude-code/network/members)
+[![Contributors](https://img.shields.io/github/contributors/Mumu0727/everything-claude-code?style=flat)](https://github.com/Mumu0727/everything-claude-code/graphs/contributors)
 [![npm ecc-universal](https://img.shields.io/npm/dw/ecc-universal?label=ecc-universal%20weekly%20downloads\&logo=npm)](https://www.npmjs.com/package/ecc-universal)
 [![npm ecc-agentshield](https://img.shields.io/npm/dw/ecc-agentshield?label=ecc-agentshield%20weekly%20downloads\&logo=npm)](https://www.npmjs.com/package/ecc-agentshield)
 [![GitHub App Install](https://img.shields.io/badge/GitHub%20App-150%20installs-2ea44f?logo=github)](https://github.com/marketplace/ecc-tools)
@@ -104,7 +104,7 @@
 
 ### v1.4.1 — 错误修复 (2026年2月)
 
-* **修复了直觉导入内容丢失问题** — `parse_instinct_file()` 在 `/instinct-import` 期间会静默丢弃 frontmatter 之后的所有内容（Action, Evidence, Examples 部分）。已由社区贡献者 @ericcai0814 修复 ([#148](https://github.com/affaan-m/everything-claude-code/issues/148), [#161](https://github.com/affaan-m/everything-claude-code/pull/161))
+* **修复了直觉导入内容丢失问题** — `parse_instinct_file()` 在 `/instinct-import` 期间会静默丢弃 frontmatter 之后的所有内容（Action, Evidence, Examples 部分）。已由社区贡献者 @ericcai0814 修复 ([#148](https://github.com/Mumu0727/everything-claude-code/issues/148), [#161](https://github.com/Mumu0727/everything-claude-code/pull/161))
 
 ### v1.4.0 — 多语言规则、安装向导 & PM2 (2026年2月)
 
@@ -128,7 +128,7 @@
 * **会话管理** — `/sessions` 命令用于查看会话历史
 * **持续学习 v2** — 基于直觉的学习，带有置信度评分、导入/导出、进化
 
-完整的更新日志请参见 [Releases](https://github.com/affaan-m/everything-claude-code/releases)。
+完整的更新日志请参见 [Releases](https://github.com/Mumu0727/everything-claude-code/releases)。
 
 ***
 
@@ -140,7 +140,7 @@
 
 ```bash
 # Add marketplace
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add Mumu0727/everything-claude-code
 
 # Install plugin
 /plugin install everything-claude-code@everything-claude-code
@@ -152,7 +152,7 @@
 
 ```bash
 # Clone the repo first
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/Mumu0727/everything-claude-code.git
 cd everything-claude-code
 
 # Recommended: use the installer (handles common + language rules safely)
@@ -522,7 +522,7 @@ Claude Code v2.1+ **会自动加载** 任何已安装插件中的 `hooks/hooks.j
 Duplicate hooks file detected: ./hooks/hooks.json resolves to already-loaded file
 ```
 
-**历史背景：** 这已导致此仓库中多次修复/还原循环（[#29](https://github.com/affaan-m/everything-claude-code/issues/29), [#52](https://github.com/affaan-m/everything-claude-code/issues/52), [#103](https://github.com/affaan-m/everything-claude-code/issues/103)）。Claude Code 版本之间的行为发生了变化，导致了混淆。我们现在有一个回归测试来防止这种情况再次发生。
+**历史背景：** 这已导致此仓库中多次修复/还原循环（[#29](https://github.com/Mumu0727/everything-claude-code/issues/29), [#52](https://github.com/Mumu0727/everything-claude-code/issues/52), [#103](https://github.com/Mumu0727/everything-claude-code/issues/103)）。Claude Code 版本之间的行为发生了变化，导致了混淆。我们现在有一个回归测试来防止这种情况再次发生。
 
 ***
 
@@ -534,7 +534,7 @@ Duplicate hooks file detected: ./hooks/hooks.json resolves to already-loaded fil
 
 ```bash
 # Add this repo as a marketplace
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add Mumu0727/everything-claude-code
 
 # Install the plugin
 /plugin install everything-claude-code@everything-claude-code
@@ -548,7 +548,7 @@ Duplicate hooks file detected: ./hooks/hooks.json resolves to already-loaded fil
     "everything-claude-code": {
       "source": {
         "source": "github",
-        "repo": "affaan-m/everything-claude-code"
+        "repo": "Mumu0727/everything-claude-code"
       }
     }
   },
@@ -564,7 +564,7 @@ Duplicate hooks file detected: ./hooks/hooks.json resolves to already-loaded fil
 >
 > ```bash
 > # 首先克隆仓库
-> git clone https://github.com/affaan-m/everything-claude-code.git
+> git clone https://github.com/Mumu0727/everything-claude-code.git
 >
 > # 选项 A：用户级规则（适用于所有项目）
 > mkdir -p ~/.claude/rules
@@ -588,7 +588,7 @@ Duplicate hooks file detected: ./hooks/hooks.json resolves to already-loaded fil
 
 ```bash
 # Clone the repo
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/Mumu0727/everything-claude-code.git
 
 # Copy agents to your Claude config
 cp everything-claude-code/agents/*.md ~/.claude/agents/
@@ -754,7 +754,7 @@ rules/
 <details>
 <summary><b>我的钩子不工作 / 我看到“重复钩子文件”错误</b></summary>
 
-这是最常见的问题。**不要在 `.claude-plugin/plugin.json` 中添加 `"hooks"` 字段。** Claude Code v2.1+ 会自动从已安装的插件加载 `hooks/hooks.json`。显式声明它会导致重复检测错误。参见 [#29](https://github.com/affaan-m/everything-claude-code/issues/29), [#52](https://github.com/affaan-m/everything-claude-code/issues/52), [#103](https://github.com/affaan-m/everything-claude-code/issues/103)。
+这是最常见的问题。**不要在 `.claude-plugin/plugin.json` 中添加 `"hooks"` 字段。** Claude Code v2.1+ 会自动从已安装的插件加载 `hooks/hooks.json`。显式声明它会导致重复检测错误。参见 [#29](https://github.com/Mumu0727/everything-claude-code/issues/29), [#52](https://github.com/Mumu0727/everything-claude-code/issues/52), [#103](https://github.com/Mumu0727/everything-claude-code/issues/103)。
 
 </details>
 
@@ -826,7 +826,7 @@ cp -r everything-claude-code/rules/common/* ~/.claude/rules/
 
 * **Cursor**：`.cursor/` 中的预翻译配置。请参阅 [Cursor IDE 支持](#cursor-ide-支持)。
 * **OpenCode**：`.opencode/` 中的完整插件支持。请参阅 [OpenCode 支持](#-opencode-支持)。
-* **Codex**：对 macOS 应用和 CLI 的一流支持，带有适配器漂移防护和 SessionStart 回退。请参阅 PR [#257](https://github.com/affaan-m/everything-claude-code/pull/257)。
+* **Codex**：对 macOS 应用和 CLI 的一流支持，带有适配器漂移防护和 SessionStart 回退。请参阅 PR [#257](https://github.com/Mumu0727/everything-claude-code/pull/257)。
 * **Antigravity**：`.agent/` 中针对工作流、技能和扁平化规则的紧密集成设置。
 * **Claude Code**：原生支持 — 这是主要目标。
 
@@ -1299,7 +1299,7 @@ ECC 是**第一个最大化利用每个主要 AI 编码工具的插件**。以�
 
 ## 🌟 Star 历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=affaan-m/everything-claude-code\&type=Date)](https://star-history.com/#affaan-m/everything-claude-code\&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Mumu0727/everything-claude-code\&type=Date)](https://star-history.com/#Mumu0727/everything-claude-code\&Date)
 
 ***
 

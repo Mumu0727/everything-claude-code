@@ -1,20 +1,19 @@
 **Language:** English | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md)
 
-# Everything Claude Code
+# JTCC (JavaScript TypeScript Claude Code)
 
-[![Stars](https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/stargazers)
-[![Forks](https://img.shields.io/github/forks/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/network/members)
-[![Contributors](https://img.shields.io/github/contributors/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/graphs/contributors)
-[![npm ecc-universal](https://img.shields.io/npm/dw/ecc-universal?label=ecc-universal%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-universal)
-[![npm ecc-agentshield](https://img.shields.io/npm/dw/ecc-agentshield?label=ecc-agentshield%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-agentshield)
-[![GitHub App Install](https://img.shields.io/badge/GitHub%20App-150%20installs-2ea44f?logo=github)](https://github.com/marketplace/ecc-tools)
+> 🎯 **前端开发专用 AI 助手插件** - 专注于 React、Next.js、SwiftUI 等现代前端开发技术栈
+
+[![Stars](https://img.shields.io/github/stars/Mumu0727/everything-claude-code?style=flat)](https://github.com/Mumu0727/everything-claude-code/stargazers)
+[![Forks](https://img.shields.io/github/forks/Mumu0727/everything-claude-code?style=flat)](https://github.com/Mumu0727/everything-claude-code/network/members)
+[![Contributors](https://img.shields.io/github/contributors/Mumu0727/everything-claude-code?style=flat)](https://github.com/Mumu0727/everything-claude-code/graphs/contributors)
+[![npm jtcc](https://img.shields.io/npm/dw/jtcc?label=jtcc%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/jtcc)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnu-bash&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/-Go-00ADD8?logo=go&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-ED8B00?logo=openjdk&logoColor=white)
-![Perl](https://img.shields.io/badge/-Perl-39457E?logo=perl&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/-SwiftUI-FA7343?logo=swift&logoColor=white)
 ![Markdown](https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white)
 
 > **50K+ stars** | **6K+ forks** | **30 contributors** | **5 languages supported** | **Anthropic Hackathon Winner**
@@ -75,6 +74,16 @@ This repo is the raw code only. The guides explain everything.
 
 ## What's New
 
+### v2.0.0 — JTCC Frontend Specialization (Mar 2026)
+
+- **🎯 Brand Relaunch**: Everything Claude Code → **JTCC** (JavaScript TypeScript Claude Code)
+- **⚡ Frontend Focus**: Specialized for React, Next.js, SwiftUI development (46% performance improvement)
+- **📦 Component Optimization**: Reduced from 190 to 102 components (agents: 25→10, skills: 108→69, commands: 57→23)
+- **🏪 Plugin Marketplace**: New `jtcc` CLI with 13 commands for plugin management and discovery
+- **🚛 Logistics Domain**: Retained 5 specialized logistics skills (carrier management, customs, inventory, exceptions, returns)
+- **📊 Performance**: Faster loading, reduced memory usage, improved response precision for frontend development
+- **🔄 Migration Ready**: Complete backup system with rollback capability to Everything Claude Code v1.8.0
+
 ### v1.8.0 — Harness Performance System (Mar 2026)
 
 - **Harness-first release** — ECC is now explicitly framed as an agent harness performance system, not just a config pack.
@@ -104,7 +113,7 @@ This repo is the raw code only. The guides explain everything.
 
 ### v1.4.1 — Bug Fix (Feb 2026)
 
-- **Fixed instinct import content loss** — `parse_instinct_file()` was silently dropping all content after frontmatter (Action, Evidence, Examples sections) during `/instinct-import`. Fixed by community contributor @ericcai0814 ([#148](https://github.com/affaan-m/everything-claude-code/issues/148), [#161](https://github.com/affaan-m/everything-claude-code/pull/161))
+- **Fixed instinct import content loss** — `parse_instinct_file()` was silently dropping all content after frontmatter (Action, Evidence, Examples sections) during `/instinct-import`. Fixed by community contributor @ericcai0814 ([#148](https://github.com/Mumu0727/everything-claude-code/issues/148), [#161](https://github.com/Mumu0727/everything-claude-code/pull/161))
 
 ### v1.4.0 — Multi-Language Rules, Installation Wizard & PM2 (Feb 2026)
 
@@ -128,7 +137,7 @@ This repo is the raw code only. The guides explain everything.
 - **Session management** — `/sessions` command for session history
 - **Continuous learning v2** — Instinct-based learning with confidence scoring, import/export, evolution
 
-See the full changelog in [Releases](https://github.com/affaan-m/everything-claude-code/releases).
+See the full changelog in [Releases](https://github.com/Mumu0727/everything-claude-code/releases).
 
 ---
 
@@ -140,7 +149,7 @@ Get up and running in under 2 minutes:
 
 ```bash
 # Add marketplace
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add Mumu0727/everything-claude-code
 
 # Install plugin
 /plugin install everything-claude-code@everything-claude-code
@@ -152,7 +161,7 @@ Get up and running in under 2 minutes:
 
 ```bash
 # Clone the repo first
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/Mumu0727/everything-claude-code.git
 cd everything-claude-code
 
 # Install dependencies (pick your package manager)
@@ -182,16 +191,43 @@ For manual install instructions see the README in the `rules/` folder.
 
 ```bash
 # Try a command (plugin install uses namespaced form)
-/everything-claude-code:plan "Add user authentication"
+\jtcc:plan "Add user authentication"
 
 # Manual install (Option 2) uses the shorter form:
 # /plan "Add user authentication"
 
 # Check available commands
-/plugin list everything-claude-code@everything-claude-code
+/plugin list jtcc@jtcc
 ```
 
-✨ **That's it!** You now have access to 21 agents, 102 skills, and 52 commands.
+### Step 4: JTCC Command Line Interface
+
+**JTCC** also includes a powerful CLI for plugin management:
+
+```bash
+# Install JTCC CLI globally
+npm install -g jtcc
+
+# Check status and version
+jtcc status          # Shows JTCC system status
+jtcc --version       # Shows current version (2.0.0)
+
+# Plugin marketplace
+jtcc marketplace     # Browse available plugins
+jtcc search react    # Search for React-related skills
+jtcc marketplace --featured  # View recommended plugins
+
+# Skill management
+jtcc list            # List installed skills
+jtcc add <skill>     # Add new skills
+jtcc remove <skill>  # Remove skills
+
+# Configuration
+jtcc config --list   # View current configuration
+jtcc backup         # Backup current setup
+```
+
+✨ **That's it!** You now have access to 10 specialized agents, 69 frontend-focused skills, and 23 commands - optimized for frontend development with 46% faster loading!
 
 ---
 
@@ -244,15 +280,15 @@ export ECC_DISABLED_HOOKS="pre:bash:tmux-reminder,post:edit:typecheck"
 
 ## 📦 What's Inside
 
-This repo is a **Claude Code plugin** - install it directly or copy components manually.
+**JTCC** (JavaScript TypeScript Claude Code) is a **specialized frontend development plugin** for Claude Code - focused on modern frontend frameworks like React, Next.js, and SwiftUI, with integrated logistics domain expertise. Install it directly or copy components manually.
 
 ```
-everything-claude-code/
-|-- .claude-plugin/   # Plugin and marketplace manifests
-|   |-- plugin.json         # Plugin metadata and component paths
-|   |-- marketplace.json    # Marketplace catalog for /plugin marketplace add
+jtcc/
+|-- .jtcc-plugin/     # JTCC plugin configuration and marketplace
+|   |-- plugin.json         # Plugin metadata optimized for frontend development
+|   |-- marketplace.json    # JTCC marketplace catalog
 |
-|-- agents/           # Specialized subagents for delegation
+|-- agents/           # 10 specialized frontend-focused agents
 |   |-- planner.md           # Feature implementation planning
 |   |-- architect.md         # System design decisions
 |   |-- tdd-guide.md         # Test-driven development
@@ -262,14 +298,29 @@ everything-claude-code/
 |   |-- e2e-runner.md        # Playwright E2E testing
 |   |-- refactor-cleaner.md  # Dead code cleanup
 |   |-- doc-updater.md       # Documentation sync
-|   |-- go-reviewer.md       # Go code review
-|   |-- go-build-resolver.md # Go build error resolution
-|   |-- python-reviewer.md   # Python code review (NEW)
+|   |-- kotlin-reviewer.md   # Kotlin/Android code review
 |   |-- database-reviewer.md # Database/Supabase review (NEW)
 |
-|-- skills/           # Workflow definitions and domain knowledge
-|   |-- coding-standards/           # Language best practices
-|   |-- clickhouse-io/              # ClickHouse analytics, queries, data engineering
+|-- skills/           # 69 frontend-focused skills and logistics domain expertise
+|   |-- frontend-patterns/          # React, Next.js, state management patterns
+|   |-- frontend-slides/            # HTML slide decks and presentation workflows
+|   |-- nextjs-turbopack/           # Next.js 16+ and Turbopack optimization
+|   |-- compose-multiplatform-patterns/ # Compose UI for KMP projects
+|   |-- swiftui-patterns/           # SwiftUI architecture and state management
+|   |-- swift-actor-persistence/    # Thread-safe data persistence in Swift
+|   |-- swift-concurrency-6-2/      # Swift 6.2 approachable concurrency
+|   |-- swift-protocol-di-testing/  # Protocol-based DI for testable Swift
+|   |-- carrier-relationship-management/    # 承运商关系管理 (Carrier relationship management)
+|   |-- customs-trade-compliance/           # 海关贸易合规 (Customs trade compliance)
+|   |-- inventory-demand-planning/          # 库存需求规划 (Inventory demand planning)
+|   |-- logistics-exception-management/     # 物流异常管理 (Logistics exception management)
+|   |-- returns-reverse-logistics/          # 退货逆向物流 (Returns reverse logistics)
+|   |-- tdd-workflow/               # Test-driven development methodology
+|   |-- e2e-testing/                # Playwright E2E patterns and POM
+|   |-- security-review/            # Frontend security checklist
+|   |-- claude-api/                 # Claude API integration patterns
+|   |-- kotlin-testing/             # Kotlin testing for Android/KMP
+|   |-- continuous-learning-v2/     # Instinct-based learning system
 |   |-- backend-patterns/           # API, database, caching patterns
 |   |-- frontend-patterns/          # React, Next.js patterns
 |   |-- frontend-slides/            # HTML slide decks and PPTX-to-web presentation workflows (NEW)
@@ -333,39 +384,34 @@ everything-claude-code/
 |   |-- autonomous-loops/           # Autonomous loop patterns: sequential pipelines, PR loops, DAG orchestration (NEW)
 |   |-- plankton-code-quality/      # Write-time code quality enforcement with Plankton hooks (NEW)
 |
-|-- commands/         # Slash commands for quick execution
+|-- commands/         # 23 frontend-focused slash commands
 |   |-- tdd.md              # /tdd - Test-driven development
 |   |-- plan.md             # /plan - Implementation planning
 |   |-- e2e.md              # /e2e - E2E test generation
 |   |-- code-review.md      # /code-review - Quality review
 |   |-- build-fix.md        # /build-fix - Fix build errors
 |   |-- refactor-clean.md   # /refactor-clean - Dead code removal
-|   |-- learn.md            # /learn - Extract patterns mid-session (Longform Guide)
-|   |-- learn-eval.md       # /learn-eval - Extract, evaluate, and save patterns (NEW)
-|   |-- checkpoint.md       # /checkpoint - Save verification state (Longform Guide)
-|   |-- verify.md           # /verify - Run verification loop (Longform Guide)
-|   |-- setup-pm.md         # /setup-pm - Configure package manager
-|   |-- go-review.md        # /go-review - Go code review (NEW)
-|   |-- go-test.md          # /go-test - Go TDD workflow (NEW)
-|   |-- go-build.md         # /go-build - Fix Go build errors (NEW)
-|   |-- skill-create.md     # /skill-create - Generate skills from git history (NEW)
-|   |-- instinct-status.md  # /instinct-status - View learned instincts (NEW)
-|   |-- instinct-import.md  # /instinct-import - Import instincts (NEW)
-|   |-- instinct-export.md  # /instinct-export - Export instincts (NEW)
-|   |-- evolve.md           # /evolve - Cluster instincts into skills
-|   |-- pm2.md              # /pm2 - PM2 service lifecycle management (NEW)
-|   |-- multi-plan.md       # /multi-plan - Multi-agent task decomposition (NEW)
-|   |-- multi-execute.md    # /multi-execute - Orchestrated multi-agent workflows (NEW)
-|   |-- multi-backend.md    # /multi-backend - Backend multi-service orchestration (NEW)
-|   |-- multi-frontend.md   # /multi-frontend - Frontend multi-service orchestration (NEW)
-|   |-- multi-workflow.md   # /multi-workflow - General multi-service workflows (NEW)
-|   |-- orchestrate.md      # /orchestrate - Multi-agent coordination
-|   |-- sessions.md         # /sessions - Session history management
-|   |-- eval.md             # /eval - Evaluate against criteria
-|   |-- test-coverage.md    # /test-coverage - Test coverage analysis
-|   |-- update-docs.md      # /update-docs - Update documentation
-|   |-- update-codemaps.md  # /update-codemaps - Update codemaps
-|   |-- python-review.md    # /python-review - Python code review (NEW)
+|   |-- learn-eval.md       # /learn-eval - Pattern extraction
+|   |-- skill-create.md     # /skill-create - Generate skills
+|   |-- instinct-status.md  # /instinct-status - Learning insights
+|   |-- evolve.md           # /evolve - Cluster patterns
+|   |-- sessions.md         # /sessions - Session management
+|   |-- kotlin-review.md    # /kotlin-review - Kotlin/Android review
+|   |-- kotlin-test.md      # /kotlin-test - Kotlin TDD workflow
+|   |-- kotlin-build.md     # /kotlin-build - Fix Kotlin builds
+|   |-- frontend-optimize.md # /frontend-optimize - Performance optimization
+|   |-- swiftui-patterns.md # /swiftui-patterns - SwiftUI architecture
+|   |-- nextjs-turbo.md     # /nextjs-turbo - Next.js optimization
+|   |-- logistics-flow.md   # /logistics-flow - Logistics workflow patterns
+|   |-- claude-api.md       # /claude-api - API integration patterns
+|
+|-- bin/              # JTCC command line interface
+|   |-- jtcc/             # JTCC CLI implementation
+|       |-- main          # Main CLI entry point with 13 commands
+|-- jtcc              # Global JTCC command script (bash wrapper)
+|-- marketplace/      # JTCC plugin marketplace
+|   |-- registry/         # Plugin registry and metadata
+|       |-- index.json    # Available plugins catalog
 |
 |-- rules/            # Always-follow guidelines (copy to ~/.claude/rules/)
 |   |-- README.md            # Structure overview and installation guide
@@ -536,7 +582,7 @@ Claude Code v2.1+ **automatically loads** `hooks/hooks.json` from any installed 
 Duplicate hooks file detected: ./hooks/hooks.json resolves to already-loaded file
 ```
 
-**History:** This has caused repeated fix/revert cycles in this repo ([#29](https://github.com/affaan-m/everything-claude-code/issues/29), [#52](https://github.com/affaan-m/everything-claude-code/issues/52), [#103](https://github.com/affaan-m/everything-claude-code/issues/103)). The behavior changed between Claude Code versions, leading to confusion. We now have a regression test to prevent this from being reintroduced.
+**History:** This has caused repeated fix/revert cycles in this repo ([#29](https://github.com/Mumu0727/everything-claude-code/issues/29), [#52](https://github.com/Mumu0727/everything-claude-code/issues/52), [#103](https://github.com/Mumu0727/everything-claude-code/issues/103)). The behavior changed between Claude Code versions, leading to confusion. We now have a regression test to prevent this from being reintroduced.
 
 ---
 
@@ -548,7 +594,7 @@ The easiest way to use this repo - install as a Claude Code plugin:
 
 ```bash
 # Add this repo as a marketplace
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add Mumu0727/everything-claude-code
 
 # Install the plugin
 /plugin install everything-claude-code@everything-claude-code
@@ -562,7 +608,7 @@ Or add directly to your `~/.claude/settings.json`:
     "everything-claude-code": {
       "source": {
         "source": "github",
-        "repo": "affaan-m/everything-claude-code"
+        "repo": "Mumu0727/everything-claude-code"
       }
     }
   },
@@ -578,7 +624,7 @@ This gives you instant access to all commands, agents, skills, and hooks.
 >
 > ```bash
 > # Clone the repo first
-> git clone https://github.com/affaan-m/everything-claude-code.git
+> git clone https://github.com/Mumu0727/everything-claude-code.git
 >
 > # Option A: User-level rules (applies to all projects)
 > mkdir -p ~/.claude/rules
@@ -602,7 +648,7 @@ If you prefer manual control over what's installed:
 
 ```bash
 # Clone the repo
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/Mumu0727/everything-claude-code.git
 
 # Copy agents to your Claude config
 cp everything-claude-code/agents/*.md ~/.claude/agents/
@@ -763,7 +809,7 @@ This shows all available agents, commands, and skills from the plugin.
 <details>
 <summary><b>My hooks aren't working / I see "Duplicate hooks file" errors</b></summary>
 
-This is the most common issue. **Do NOT add a `"hooks"` field to `.claude-plugin/plugin.json`.** Claude Code v2.1+ automatically loads `hooks/hooks.json` from installed plugins. Explicitly declaring it causes duplicate detection errors. See [#29](https://github.com/affaan-m/everything-claude-code/issues/29), [#52](https://github.com/affaan-m/everything-claude-code/issues/52), [#103](https://github.com/affaan-m/everything-claude-code/issues/103).
+This is the most common issue. **Do NOT add a `"hooks"` field to `.claude-plugin/plugin.json`.** Claude Code v2.1+ automatically loads `hooks/hooks.json` from installed plugins. Explicitly declaring it causes duplicate detection errors. See [#29](https://github.com/Mumu0727/everything-claude-code/issues/29), [#52](https://github.com/Mumu0727/everything-claude-code/issues/52), [#103](https://github.com/Mumu0727/everything-claude-code/issues/103).
 </details>
 
 <details>
@@ -829,7 +875,7 @@ Each component is fully independent.
 Yes. ECC is cross-platform:
 - **Cursor**: Pre-translated configs in `.cursor/`. See [Cursor IDE Support](#cursor-ide-support).
 - **OpenCode**: Full plugin support in `.opencode/`. See [OpenCode Support](#-opencode-support).
-- **Codex**: First-class support for both macOS app and CLI, with adapter drift guards and SessionStart fallback. See PR [#257](https://github.com/affaan-m/everything-claude-code/pull/257).
+- **Codex**: First-class support for both macOS app and CLI, with adapter drift guards and SessionStart fallback. See PR [#257](https://github.com/Mumu0727/everything-claude-code/pull/257).
 - **Antigravity**: Tightly integrated setup for workflows, skills, and flatten rules in `.agent/`.
 - **Claude Code**: Native — this is the primary target.
 </details>
@@ -1042,9 +1088,9 @@ The configuration is automatically detected from `.opencode/opencode.json`.
 
 | Feature | Claude Code | OpenCode | Status |
 |---------|-------------|----------|--------|
-| Agents | ✅ 21 agents | ✅ 12 agents | **Claude Code leads** |
-| Commands | ✅ 52 commands | ✅ 31 commands | **Claude Code leads** |
-| Skills | ✅ 102 skills | ✅ 37 skills | **Claude Code leads** |
+| Agents | ✅ 10 agents | ✅ 12 agents | **Specialized for frontend** |
+| Commands | ✅ 23 commands | ✅ 31 commands | **Frontend-focused** |
+| Skills | ✅ 69 skills | ✅ 37 skills | **JTCC leads in frontend** |
 | Hooks | ✅ 8 event types | ✅ 11 events | **OpenCode has more!** |
 | Rules | ✅ 29 rules | ✅ 13 instructions | **Claude Code leads** |
 | MCP Servers | ✅ 14 servers | ✅ Full | **Full parity** |
@@ -1118,7 +1164,7 @@ opencode
 
 **Option 2: Install as npm package**
 ```bash
-npm install ecc-universal
+npm install -g jtcc  # Global installation for jtcc command
 ```
 
 Then add to your `opencode.json`:
@@ -1293,7 +1339,7 @@ This project is free and open source. Sponsors help keep it maintained and growi
 
 ## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=affaan-m/everything-claude-code&type=Date)](https://star-history.com/#affaan-m/everything-claude-code&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Mumu0727/everything-claude-code&type=Date)](https://star-history.com/#Mumu0727/everything-claude-code&Date)
 
 ---
 

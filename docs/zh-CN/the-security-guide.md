@@ -565,7 +565,7 @@ Grade A (Score: 94) after second pass
 **ECC 生态系统：**
 
 * [AgentShield on npm](https://www.npmjs.com/package/ecc-agentshield) — 零安装代理安全扫描
-* [Everything Claude Code](https://github.com/affaan-m/everything-claude-code) — 50K+ 星标，生产就绪的代理配置
+* [Everything Claude Code](https://github.com/Mumu0727/everything-claude-code) — 50K+ 星标，生产就绪的代理配置
 * [速成指南](the-shortform-guide.md) — 设置和配置基础
 * [详细指南](the-longform-guide.md) — 高级模式和优化
 * [OpenClaw 指南](the-openclaw-guide.md) — 来自代理前沿的安全经验教训
