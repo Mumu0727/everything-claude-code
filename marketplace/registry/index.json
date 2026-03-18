@@ -1,0 +1,31 @@
+{
+  "name": "JTCC Plugin Marketplace",
+  "version": "1.0.0",
+  "description": "JTCC 前端开发插件市场 - 扩展你的 AI 助手能力",
+  "packages": {},
+  "categories": {
+    "frontend": {
+      "name": "前端开发技能包",
+      "description": "React, Vue, Angular, Next.js 等前端框架技能包"
+    },
+    "testing": {
+      "name": "测试相关技能包",
+      "description": "单元测试、E2E测试、TDD 等测试技能包"
+    },
+    "logistics": {
+      "name": "物流专业技能包",
+      "description": "物流管理、供应链、库存等专业领域技能包"
+    },
+    "ai-tools": {
+      "name": "AI工具集成",
+      "description": "AI 模型集成、提示工程等 AI 相关技能包"
+    },
+    "utilities": {
+      "name": "开发工具",
+      "description": "代码生成、重构、优化等通用开发工具"
+    }
+  },
+  "featured": [],
+  "recent": [],
+  "popular": []
+}

@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+const { program } = require("commander");
+const pkg = require("../../package.json");
+
+program
+  .name("jtcc")
+  .description("JavaScript TypeScript Claude Code - 前端开发专用 AI 助手")
+  .version(pkg.version);
+
+// 安装命令
+program
+  .command("install")
+  .description("安装 JTCC 插件到 Claude Code")
+  .action(() => console.log("🚀 正在安装 JTCC..."));
+
+// 插件市场命令  
+program
+  .command("marketplace")
+  .description("打开 JTCC 插件市场")
+  .action(() => console.log("🏪 JTCC 插件市场"));
+
+program.parse(process.argv);

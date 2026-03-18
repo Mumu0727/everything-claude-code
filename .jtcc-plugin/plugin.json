@@ -1,0 +1,36 @@
+{
+  "name": "jtcc",
+  "displayName": "JTCC - JavaScript TypeScript Claude Code",
+  "version": "2.0.0",
+  "description": "前端开发专用 AI 助手插件 - 专注于 React、Next.js、SwiftUI 等现代前端技术栈，包含物流专业领域支持",
+  "category": "frontend-development",
+  "author": {
+    "name": "JTCC Development Team",
+    "url": "https://github.com/jtcc-dev"
+  },
+  "homepage": "https://github.com/jtcc-dev/jtcc",
+  "repository": "https://github.com/jtcc-dev/jtcc",
+  "license": "MIT",
+  "keywords": [
+    "jtcc",
+    "javascript",
+    "typescript",
+    "frontend",
+    "react",
+    "nextjs",
+    "vue",
+    "angular",
+    "swiftui",
+    "claude-code",
+    "ai-assistant",
+    "logistics",
+    "marketplace"
+  ],
+  "marketplace": {
+    "enabled": true,
+    "registry": "marketplace/registry/index.json"
+  },
+  "engines": {
+    "claude-code": ">=1.0.0"
+  }
+}
