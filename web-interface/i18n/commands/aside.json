@@ -1,0 +1,9 @@
+{
+  "fileName": "aside",
+  "originalDescription": "Answer a quick side question without interrupting or losing context from the current task. Resume work automatically after answering.",
+  "translatedDescription": "在不中断当前任务的情况下快速回答问题，保持工作上下文，回答后自动恢复工作",
+  "originalTitle": "Aside Command",
+  "translatedTitle": "旁白命令",
+  "lastUpdated": "2026-03-19T07:56:59.958Z",
+  "sourceHash": "dd69d2099895973facbd4ba138310da8"
+}

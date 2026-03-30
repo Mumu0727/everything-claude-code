@@ -1,0 +1,9 @@
+{
+  "fileName": "skill-stocktake",
+  "originalDescription": "Use when auditing Claude skills and commands for quality. Supports Quick Scan (changed skills only) and Full Stocktake modes with sequential subagent batch evaluation.",
+  "translatedDescription": "用于审核Claude技能和命令质量。支持快速扫描（仅更改的技能）和完整盘点模式，具有顺序子代理批量评估",
+  "originalTitle": "skill-stocktake",
+  "translatedTitle": "技能盘点",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "stocktake001"
+}

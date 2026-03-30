@@ -1,0 +1,9 @@
+{
+  "fileName": "docs-lookup",
+  "originalDescription": "When the user asks how to use a library, framework, or API or needs up-to-date code examples, use Context7 MCP to fetch current documentation and return answers with examples. Invoke for docs/API/setup questions.",
+  "translatedDescription": "当用户询问如何使用库、框架或API，或需要最新代码示例时，使用Context7 MCP获取当前文档并返回带示例的答案。用于文档/API/设置问题",
+  "originalTitle": "",
+  "translatedTitle": "",
+  "lastUpdated": "2026-03-19T10:17:52.056Z",
+  "sourceHash": "83c0f656f9a5c2341f2bbd274e24e81d"
+}

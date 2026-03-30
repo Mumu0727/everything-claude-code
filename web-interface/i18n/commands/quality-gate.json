@@ -1,0 +1,9 @@
+{
+  "fileName": "quality-gate",
+  "originalDescription": "Run the ECC quality pipeline on demand for a file or project scope.",
+  "translatedDescription": "按需对文件或项目范围运行ECC质量流水线",
+  "originalTitle": "Quality Gate Command",
+  "translatedTitle": "质量 Gate Command",
+  "lastUpdated": "2026-03-19T08:07:05.659Z",
+  "sourceHash": "e77537dca93814bccd3258298963eb65"
+}

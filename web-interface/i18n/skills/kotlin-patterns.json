@@ -1,0 +1,9 @@
+{
+  "fileName": "kotlin-patterns",
+  "originalDescription": "Idiomatic Kotlin patterns, best practices, and conventions for building robust, efficient, and maintainable Kotlin applications with coroutines, null safety, and DSL builders.",
+  "translatedDescription": "Kotlin惯用模式、最佳实践和约定，用于构建健壮、高效和可维护的Kotlin应用程序，涵盖协程、空安全和DSL构建器",
+  "originalTitle": "Kotlin Development Patterns",
+  "translatedTitle": "Kotlin开发模式",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "kotlin001"
+}

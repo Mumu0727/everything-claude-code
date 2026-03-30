@@ -1,0 +1,9 @@
+{
+  "fileName": "swift-actor-persistence",
+  "originalDescription": "Thread-safe data persistence in Swift using actors — in-memory cache with file-backed storage, eliminating data races by design.",
+  "translatedDescription": "使用Swift actors实现线程安全的数据持久化——内存缓存加文件备份存储，从设计上消除数据竞争",
+  "originalTitle": "Swift Actors for Thread-Safe Persistence",
+  "translatedTitle": "Swift Actors线程安全持久化",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "swift002"
+}

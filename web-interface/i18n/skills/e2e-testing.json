@@ -1,0 +1,9 @@
+{
+  "fileName": "e2e-testing",
+  "originalDescription": "Playwright E2E testing patterns, Page Object Model, configuration, CI/CD integration, artifact management, and flaky test strategies.",
+  "translatedDescription": "Playwright端到端测试模式，包括页面对象模型、配置、CI/CD集成、工件管理和不稳定测试策略",
+  "originalTitle": "E2E Testing",
+  "translatedTitle": "端到端测试",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "e2e001"
+}

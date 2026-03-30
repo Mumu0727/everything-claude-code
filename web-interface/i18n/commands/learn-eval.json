@@ -1,0 +1,9 @@
+{
+  "fileName": "learn-eval",
+  "originalDescription": "\"Extract reusable patterns from the session, self-evaluate quality before saving, and determine the right save location (Global vs Project).\"",
+  "translatedDescription": "从会话中提取可复用模式，保存前进行质量自评估，并确定合适的保存位置（全局或项目）",
+  "originalTitle": "/learn-eval - Extract, Evaluate, then Save",
+  "translatedTitle": "/learn-eval - 提取、评估、保存",
+  "lastUpdated": "2026-03-19T08:10:28.081Z",
+  "sourceHash": "d7ba01ca0640796e30546679de23f102"
+}

@@ -1,0 +1,9 @@
+{
+  "fileName": "prompt-optimize",
+  "originalDescription": "Analyze a draft prompt and output an optimized, ECC-enriched version ready to paste and run. Does NOT execute the task — outputs advisory analysis only.",
+  "translatedDescription": "分析草稿提示并输出优化的、ECC增强版本，可直接粘贴运行。不执行任务 — 仅输出建议性分析",
+  "originalTitle": "/prompt-optimize",
+  "translatedTitle": "/prompt-optimize",
+  "lastUpdated": "2026-03-19T08:07:05.658Z",
+  "sourceHash": "753e823bd3f846941bb1888f41f205cd"
+}

@@ -1,0 +1,9 @@
+{
+  "fileName": "resume-session",
+  "originalDescription": "Load the most recent session file from ~/.claude/sessions/ and resume work with full context from where the last session ended.",
+  "translatedDescription": "从 ~/.claude/sessions/ 加载最新的会话文件，并从上次会话结束的地方恢复工作，保持完整上下文",
+  "originalTitle": "Resume Session Command",
+  "translatedTitle": "恢复会话命令",
+  "lastUpdated": "2026-03-19T07:56:59.985Z",
+  "sourceHash": "ba442d3861d93f1a48f5d7010af58abf"
+}

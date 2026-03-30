@@ -1,0 +1,9 @@
+{
+  "fileName": "refactor-cleaner",
+  "originalDescription": "Dead code cleanup and consolidation specialist. Use PROACTIVELY for removing unused code, duplicates, and refactoring. Runs analysis tools (knip, depcheck, ts-prune) to identify dead code and safely removes it.",
+  "translatedDescription": "死代码清理和整合专家。主动用于删除未使用的代码、重复代码和重构。运行分析工具（knip、depcheck、ts-prune）识别死代码并安全删除",
+  "originalTitle": "Refactor & Dead Code Cleaner",
+  "translatedTitle": "Refactor & Dead Code Cleaner",
+  "lastUpdated": "2026-03-19T10:17:52.062Z",
+  "sourceHash": "67ddbac9612bfdb1810b9878c45f1cb3"
+}

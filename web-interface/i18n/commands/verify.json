@@ -1,0 +1,9 @@
+{
+  "fileName": "verify",
+  "originalDescription": "Run comprehensive verification on current codebase state.",
+  "translatedDescription": "对当前代码库状态进行全面验证",
+  "originalTitle": "Verification Command",
+  "translatedTitle": "Verification 命令",
+  "lastUpdated": "2026-03-19T08:07:05.665Z",
+  "sourceHash": "7c48a3723d2b7a9ca3c0d185abae07ab"
+}

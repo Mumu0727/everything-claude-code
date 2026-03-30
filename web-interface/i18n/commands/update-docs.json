@@ -1,0 +1,9 @@
+{
+  "fileName": "update-docs",
+  "originalDescription": "Sync documentation with the codebase, generating from source-of-truth files.",
+  "translatedDescription": "将文档与代码库同步，从权威源文件生成文档",
+  "originalTitle": "Update Documentation",
+  "translatedTitle": "更新 文档",
+  "lastUpdated": "2026-03-19T08:07:05.663Z",
+  "sourceHash": "298e289dbc85d2898d0657c528d43bb4"
+}

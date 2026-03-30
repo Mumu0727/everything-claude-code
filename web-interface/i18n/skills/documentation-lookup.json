@@ -1,0 +1,9 @@
+{
+  "fileName": "documentation-lookup",
+  "originalDescription": "Use up-to-date library and framework docs via Context7 MCP instead of training data. Activates for setup questions, API references, code examples, or when the user names a framework (e.g. React, Next.js, Prisma).",
+  "translatedDescription": "通过Context7 MCP使用最新的库和框架文档，而非训练数据。适用于设置问题、API参考、代码示例，或当用户提到框架时（如React、Next.js、Prisma）",
+  "originalTitle": "Documentation Lookup (Context7)",
+  "translatedTitle": "文档查找（Context7）",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "docs001"
+}

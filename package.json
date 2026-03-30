@@ -1,6 +1,6 @@
 {
   "name": "jtcc",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "description": "JTCC (J&T Claude Code) - 前端开发专用 AI 助手插件，专注于 React、Next.js、SwiftUI 等现代前端开发技术栈",
   "main": "bin/jtcc/main",
   "keywords": [
@@ -84,7 +84,9 @@
     "scripts/harness-audit.js",
     "scripts/session-inspect.js",
     "scripts/uninstall.js",
+    "scripts/web-interface.js",
     "skills/",
+    "web-interface/",
     "AGENTS.md",
     ".claude-plugin/plugin.json",
     ".claude-plugin/README.md",
@@ -96,7 +98,8 @@
   "bin": {
     "jtcc": "bin/jtcc/main",
     "ecc": "scripts/ecc.js",
-    "ecc-install": "scripts/install-apply.js"
+    "ecc-install": "scripts/install-apply.js",
+    "jtcc-web": "scripts/web-interface.js"
   },
   "scripts": {
     "postinstall": "echo '\\n  🚀 JTCC v2.0 已安装!\\n  运行: jtcc status\\n  帮助: jtcc --help\\n  市场: jtcc marketplace\\n  文档: https://github.com/jtcc-dev/jtcc\\n'",
@@ -106,11 +109,16 @@
     "orchestrate:status": "node scripts/orchestration-status.js",
     "orchestrate:worker": "bash scripts/orchestrate-codex-worker.sh",
     "orchestrate:tmux": "node scripts/orchestrate-worktrees.js",
-    "test": "node scripts/ci/validate-agents.js && node scripts/ci/validate-commands.js && node scripts/ci/validate-rules.js && node scripts/ci/validate-skills.js && node scripts/ci/validate-hooks.js && node scripts/ci/validate-install-manifests.js && node scripts/ci/validate-no-personal-paths.js && node scripts/ci/catalog.js --text && node tests/run-all.js",
+    "test": "node scripts/ci/validate-agents.js && node scripts/ci/validate-commands.js && node scripts/ci/validate-rules.js && node scripts/ci/validate-skills.js && node scripts/ci/validate-hooks.js && node scripts/ci/validate-install-manifests.js && node scripts/ci/validate-no-personal-paths.js && node scripts/ci/catalog.js --text && node tests/run-all.js && node tests/web-interface.test.js",
     "coverage": "c8 --all --include=\"scripts/**/*.js\" --check-coverage --lines 80 --functions 80 --branches 80 --statements 80 --reporter=text --reporter=lcov node tests/run-all.js",
     "publish": "node scripts/publish-npm.js",
     "publish:dry": "node scripts/publish-npm.js --dry-run",
-    "publish:force": "node scripts/publish-npm.js --force"
+    "publish:skip-translation": "node scripts/publish-npm.js --skip-translation",
+    "publish:force": "node scripts/publish-npm.js --force",
+    "translate:web": "cd web-interface && npm run translate",
+    "web:start": "node scripts/web-interface.js",
+    "web:dev": "node scripts/web-interface.js --dev",
+    "web:test": "node tests/web-interface.test.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",

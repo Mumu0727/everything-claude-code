@@ -1,0 +1,9 @@
+{
+  "fileName": "plankton-code-quality",
+  "originalDescription": "Write-time code quality enforcement using Plankton — auto-formatting, linting, and Claude-powered fixes on every file edit via hooks.",
+  "translatedDescription": "使用Plankton进行写时代码质量强制执行——通过钩子在每次文件编辑时自动格式化、代码检查和Claude驱动的修复",
+  "originalTitle": "Plankton Code Quality Skill",
+  "translatedTitle": "Plankton代码质量技能",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "plankton001"
+}

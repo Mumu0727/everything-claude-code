@@ -1,0 +1,9 @@
+{
+  "fileName": "kotlin-testing",
+  "originalDescription": "Kotlin testing patterns with Kotest, MockK, coroutine testing, property-based testing, and Kover coverage. Follows TDD methodology with idiomatic Kotlin practices.",
+  "translatedDescription": "使用Kotest、MockK、协程测试、基于属性的测试和Kover覆盖率的Kotlin测试模式。遵循TDD方法论和Kotlin惯用实践",
+  "originalTitle": "Kotlin Testing Patterns",
+  "translatedTitle": "Kotlin测试模式",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "kotlin003"
+}

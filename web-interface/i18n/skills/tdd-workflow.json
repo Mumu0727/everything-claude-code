@@ -1,0 +1,9 @@
+{
+  "fileName": "tdd-workflow",
+  "originalDescription": "Use this skill when writing new features, fixing bugs, or refactoring code. Enforces test-driven development with 80%+ coverage including unit, integration, and E2E tests.",
+  "translatedDescription": "编写新功能、修复错误或重构代码时使用此技能。强制执行测试驱动开发，确保80%以上的单元测试、集成测试和端到端测试覆盖率",
+  "originalTitle": "Test-Driven Development Workflow",
+  "translatedTitle": "测试驱动开发工作流",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "tdd001"
+}
