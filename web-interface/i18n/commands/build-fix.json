@@ -1,0 +1,9 @@
+{
+  "fileName": "build-fix",
+  "originalDescription": "Incrementally fix build and type errors with minimal, safe changes.",
+  "translatedDescription": "通过最小、安全的变更增量式修复构建和类型错误",
+  "originalTitle": "Build and Fix",
+  "translatedTitle": "构建修复",
+  "lastUpdated": "2026-03-19T07:56:59.961Z",
+  "sourceHash": "ff1a59553a3eeca16d1dbe8a7959b3ba"
+}

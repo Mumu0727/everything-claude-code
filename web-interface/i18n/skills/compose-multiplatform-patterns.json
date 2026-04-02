@@ -1,0 +1,9 @@
+{
+  "fileName": "compose-multiplatform-patterns",
+  "originalDescription": "Compose Multiplatform and Jetpack Compose patterns for KMP projects — state management, navigation, theming, performance, and platform-specific UI.",
+  "translatedDescription": "用于KMP项目的Compose Multiplatform和Jetpack Compose模式——状态管理、导航、主题、性能和平台特定UI",
+  "originalTitle": "Compose Multiplatform Patterns",
+  "translatedTitle": "Compose多平台模式",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "compose001"
+}

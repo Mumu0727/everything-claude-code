@@ -12,7 +12,7 @@ function createJtccCommandOperations(adapter, moduleId, sourceRelativePath, inpu
   const commandName = fileName.replace('.md', '');
 
   // 创建带有 jtcc- 前缀的命令名（避免 Windows 冒号问题）
-  const jtccCommandName = `jt-${commandName}.md`;
+  const jtccCommandName = `${commandName}.md`;
 
   const targetCommandsDir = path.join(adapter.resolveRoot(input), 'commands', 'jtcc');
   const destinationPath = path.join(targetCommandsDir, jtccCommandName);

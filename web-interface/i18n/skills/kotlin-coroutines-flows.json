@@ -1,0 +1,9 @@
+{
+  "fileName": "kotlin-coroutines-flows",
+  "originalDescription": "Kotlin Coroutines and Flow patterns for Android and KMP — structured concurrency, Flow operators, StateFlow, error handling, and testing.",
+  "translatedDescription": "适用于Android和KMP的Kotlin协程和Flow模式——结构化并发、Flow操作符、StateFlow、错误处理和测试",
+  "originalTitle": "Kotlin Coroutines & Flows",
+  "translatedTitle": "Kotlin协程与Flow",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "kotlin002"
+}

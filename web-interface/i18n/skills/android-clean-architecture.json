@@ -1,0 +1,9 @@
+{
+  "fileName": "android-clean-architecture",
+  "originalDescription": "Clean Architecture patterns for Android and Kotlin Multiplatform projects — module structure, dependency rules, UseCases, Repositories, and data layer patterns.",
+  "translatedDescription": "Android和Kotlin多平台项目的清洁架构模式——模块结构、依赖规则、用例、仓储和数据层模式",
+  "originalTitle": "Android Clean Architecture",
+  "translatedTitle": "Android清洁架构",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "android001"
+}

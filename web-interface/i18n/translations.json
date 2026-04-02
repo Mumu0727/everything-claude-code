@@ -1,0 +1,552 @@
+{
+  "commands": {
+    "aside": {
+      "description": "在不中断当前任务的情况下快速回答问题，保持工作上下文，回答后自动恢复工作",
+      "title": "旁白命令",
+      "category": "通用工具"
+    },
+    "build-fix": {
+      "description": "通过最小、安全的变更增量式修复构建和类型错误",
+      "title": "构建修复",
+      "category": "构建工具"
+    },
+    "code-review": {
+      "description": "对未提交变更进行全面的安全性和质量审查",
+      "title": "代码审查",
+      "category": "代码质量"
+    },
+    "docs": {
+      "description": "通过Context7查找库或主题的最新文档",
+      "title": "/docs",
+      "category": "文档工具"
+    },
+    "e2e": {
+      "description": "使用Playwright生成并运行端到端测试。创建测试流程，运行测试，捕获截图/视频/跟踪，并上传测试工件",
+      "title": "端到端测试",
+      "category": "测试工具"
+    },
+    "eval": {
+      "description": "管理评估驱动的开发工作流",
+      "title": "Eval 命令",
+      "category": "通用工具"
+    },
+    "evolve": {
+      "description": "分析智能模式并建议或生成优化结构",
+      "title": "智能模式演进命令",
+      "category": "学习工具"
+    },
+    "instinct-import": {
+      "description": "从文件或URL导入智能模式到项目或全局作用域",
+      "title": "智能模式导入命令",
+      "category": "学习工具"
+    },
+    "instinct-status": {
+      "description": "显示已学习的智能模式（项目+全局）及其置信度",
+      "title": "智能模式状态命令",
+      "category": "学习工具"
+    },
+    "learn-eval": {
+      "description": "从会话中提取可复用模式，保存前进行质量自评估，并确定合适的保存位置（全局或项目）",
+      "title": "/learn-eval - 提取、评估、保存",
+      "category": "学习工具"
+    },
+    "learn": {
+      "description": "分析当前会话并提取值得保存为技能的模式",
+      "title": "/learn - 提取可复用模式",
+      "category": "学习工具"
+    },
+    "multi-frontend": {
+      "description": "前端专注工作流（研究 → 构思 → 计划 → 执行 → 优化 → 审查），由Gemini主导",
+      "title": "前端 - 前端-Focused Development",
+      "category": "前端工具"
+    },
+    "multi-plan": {
+      "description": "多模型协作规划 - 上下文检索 + 双模型分析 → 生成逐步实施计划",
+      "title": "Plan - Multi-Model Collaborative Planning",
+      "category": "规划工具"
+    },
+    "plan": {
+      "description": "重申需求，评估风险，创建逐步实施计划。在修改任何代码前等待用户确认",
+      "title": "计划命令",
+      "category": "规划工具"
+    },
+    "projects": {
+      "description": "列出已知项目及其智能模式统计信息",
+      "title": "Projects 命令",
+      "category": "测试工具"
+    },
+    "promote": {
+      "description": "将项目范围的智能模式提升到全局范围",
+      "title": "提升 Command",
+      "category": "测试工具"
+    },
+    "prompt-optimize": {
+      "description": "分析草稿提示并输出优化的、ECC增强版本，可直接粘贴运行。不执行任务 — 仅输出建议性分析",
+      "title": "/prompt-optimize",
+      "category": "通用工具"
+    },
+    "quality-gate": {
+      "description": "按需对文件或项目范围运行ECC质量流水线",
+      "title": "质量 Gate Command",
+      "category": "测试工具"
+    },
+    "refactor-clean": {
+      "description": "安全识别并移除死代码，每步都进行测试验证",
+      "title": "Refactor Clean",
+      "category": "重构工具"
+    },
+    "resume-session": {
+      "description": "从 ~/.claude/sessions/ 加载最新的会话文件，并从上次会话结束的地方恢复工作，保持完整上下文",
+      "title": "恢复会话命令",
+      "category": "会话管理"
+    },
+    "save-session": {
+      "description": "将当前会话状态保存到 ~/.claude/sessions/ 中的带日期文件，以便在未来会话中恢复工作并保持完整上下文",
+      "title": "保存会话命令",
+      "category": "会话管理"
+    },
+    "skill-create": {
+      "description": "分析本地git历史以提取编码模式并生成SKILL.md文件。Skill Creator GitHub应用的本地版本",
+      "title": "/技能-创建 - Local 技能 Generation",
+      "category": "学习工具"
+    },
+    "tdd": {
+      "description": "强制执行测试驱动开发工作流。构建接口架构，首先生成测试，然后实现通过测试的最少代码。确保80%以上的覆盖率",
+      "title": "TDD命令",
+      "category": "测试工具"
+    },
+    "test-coverage": {
+      "description": "分析测试覆盖率，识别缺口，并生成缺失的测试以达到80%以上覆盖率",
+      "title": "Test 覆盖率",
+      "category": "测试工具"
+    },
+    "update-codemaps": {
+      "description": "分析代码库结构并生成精简的架构文档",
+      "title": "更新 Codemaps",
+      "category": "文档工具"
+    },
+    "update-docs": {
+      "description": "将文档与代码库同步，从权威源文件生成文档",
+      "title": "更新 文档",
+      "category": "文档工具"
+    },
+    "verify": {
+      "description": "对当前代码库状态进行全面验证",
+      "title": "Verification 命令",
+      "category": "代码质量"
+    },
+    "web-interface": {
+      "description": "启动JTCC可视化Web界面，在浏览器中查看所有命令、代理和技能",
+      "title": "网页界面命令",
+      "category": "前端工具"
+    }
+  },
+  "lastGenerated": "2026-03-19T13:30:00.000Z",
+  "totalCommands": 28,
+  "agents": {
+    "architect": {
+      "description": "软件架构专家，专注于系统设计、可扩展性和技术决策。在规划新功能、重构大型系统或做出架构决策时主动使用",
+      "title": "ADR-001: Use Redis for Semantic Search Vector Storage",
+      "category": "架构设计"
+    },
+    "build-error-resolver": {
+      "description": "构建和TypeScript错误解决专家。在构建失败或类型错误发生时主动使用。仅通过最小差异修复构建/类型错误，不进行架构编辑。专注于快速让构建通过",
+      "title": "构建错误解决器",
+      "category": "构建专家"
+    },
+    "code-reviewer": {
+      "description": "专业代码审查专家。主动审查代码的质量、安全性和可维护性。在编写或修改代码后立即使用。所有代码更改都必须使用",
+      "title": "",
+      "category": "代码质量"
+    },
+    "doc-updater": {
+      "description": "文档和代码图谱专家。主动用于更新代码图谱和文档。运行/update-codemaps和/update-docs，生成docs/CODEMAPS/*，更新README和指南",
+      "title": "文档 & Codemap Specialist",
+      "category": "文档专家"
+    },
+    "docs-lookup": {
+      "description": "当用户询问如何使用库、框架或API，或需要最新代码示例时，使用Context7 MCP获取当前文档并返回带示例的答案。用于文档/API/设置问题",
+      "title": "",
+      "category": "文档专家"
+    },
+    "e2e-runner": {
+      "description": "端到端测试专家，使用Vercel Agent Browser（首选）和Playwright备用。主动用于生成、维护和运行E2E测试。管理测试流程，隔离不稳定测试，上传工件（截图、视频、跟踪），确保关键用户流程正常工作",
+      "title": "端到端测试运行器",
+      "category": "测试专家"
+    },
+    "planner": {
+      "description": "Expert planning specialist for complex features和refactoring. Use PROACTIVELY when users request feature implementation, architectural changes, 或 complex refactoring. Automatically activated for planningtasks.",
+      "title": "Implementation Plan: [Feature Name]",
+      "category": "架构设计"
+    },
+    "refactor-cleaner": {
+      "description": "死代码清理和整合专家。主动用于删除未使用的代码、重复代码和重构。运行分析工具（knip、depcheck、ts-prune）识别死代码并安全删除",
+      "title": "Refactor & Dead Code Cleaner",
+      "category": "重构专家"
+    },
+    "security-reviewer": {
+      "description": "安全漏洞检测和修复专家。在编写处理用户输入、身份验证、API端点或敏感数据的代码后主动使用。标记密钥、SSRF、注入、不安全加密和OWASP前10名漏洞",
+      "title": "安全审查员",
+      "category": "代码质量"
+    },
+    "tdd-guide": {
+      "description": "测试驱动开发专家，强制执行测试优先方法。在编写新功能、修复错误或重构代码时主动使用。确保80%以上的测试覆盖率",
+      "title": "Required: 80%+ branches, functions, lines, statements",
+      "category": "测试专家"
+    },
+    "translation-expert": {
+      "description": "专业技术文档翻译专家，专注于软件开发和AI工具文档的中英文翻译",
+      "title": "技术文档翻译专家",
+      "category": "翻译专家"
+    }
+  },
+  "totalAgents": 11,
+  "skills": {
+    "tdd-workflow": {
+      "description": "此技能确保所有代码开发都遵循TDD原则，具有全面的测试覆盖率",
+      "title": "测试驱动开发工作流",
+      "category": "测试技能"
+    },
+    "frontend-patterns": {
+      "description": "React、Next.js和高性能用户界面的现代前端模式",
+      "title": "前端开发模式",
+      "category": "前端技能"
+    },
+    "api-design": {
+      "description": "设计一致、开发者友好的REST API的约定和最佳实践",
+      "title": "API设计模式",
+      "category": "后端技能"
+    },
+    "security-review": {
+      "description": "此技能确保所有代码都遵循安全最佳实践并识别潜在漏洞",
+      "title": "安全审查技能",
+      "category": "安全技能"
+    },
+    "agent-harness-construction": {
+      "description": "Use this 技能 when you are improving how an 代理 plans, calls tools, recovers 从 errors,和converges oncompletion.",
+      "title": "代理工具构建",
+      "category": "自动化技能"
+    },
+    "agentic-engineering": {
+      "description": "Use this 技能 for engineering workflows where AI 代理 perform most implementation work 和 humans 执行 质量和riskcontrols.",
+      "title": "代理工程",
+      "category": "自动化技能"
+    },
+    "ai-first-engineering": {
+      "description": "Use this 技能 when designing process, reviews,和architecture for teams shipping 使用 AI-assisted codegeneration.",
+      "title": "AI优先工程",
+      "category": "数据处理"
+    },
+    "ai-regression-testing": {
+      "description": "Testing 模式 specifically designed for AI-assisted development, where the same model writes code和reviews it — creating systematic blind spots that only automated tests cancatch.",
+      "title": "AI Regression Testing",
+      "category": "测试技能"
+    },
+    "android-clean-architecture": {
+      "description": "Android和KMP项目的清洁架构模式。涵盖模块边界、依赖反转、UseCase/Repository模式以及使用Room、SQLDelight和Ktor的数据层设计",
+      "title": "Android清洁架构",
+      "category": "移动开发"
+    },
+    "article-writing": {
+      "description": "Write long-form content that sounds like a real person 或 brand, not generic AI output.",
+      "title": "Article Writing",
+      "category": "文档技能"
+    },
+    "autonomous-loops": {
+      "description": "> Compatibility note (v1.8.0): `autonomous-loops` is retained for one release.",
+      "title": "Autonomous Loops 技能",
+      "category": "自动化技能"
+    },
+    "blueprint": {
+      "description": "Turn a one-line objective 到 a step-by-step construction plan that any coding 代理 can execute cold.",
+      "title": "Blueprint — Construction Plan Generator",
+      "category": "数据处理"
+    },
+    "bun-runtime": {
+      "description": "Bun作为运行时、包管理器、打包器和测试运行器。何时选择Bun vs Node、迁移注意事项和Vercel支持",
+      "title": "Bun运行时",
+      "category": "测试技能"
+    },
+    "carrier-relationship-management": {
+      "description": "You are a senior transportation manager 使用 15+ years managing carrier portfolios ranging 从 40 to 200+ active carriers across truckload, LTL, intermodal, 和 brokerage. You own the full lifecycle: sourcing new carriers, negotiating rates, running RFPs, building routing guides, tracking performance 通过 scorecards, managing contract renewals, 和 making allocation decisions. Your systems include TMS (transportation management), rate management platforms, carrier onboarding portals, DAT/Greenscreens for market intelligence, 和 FMCSA SAFER for compliance. You balance cost reduction pressure against service 质量, capacity 安全性,和carrier relationship health — because when the market tightens, your carriers' willingness to cover your freight depends on how you treated them when capacity wasloose.",
+      "title": "Carrier Relationship Management",
+      "category": "前端技能"
+    },
+    "claude-api": {
+      "description": "Build applications 使用 the Anthropic Claude API 和 SDKs.",
+      "title": "Claude API",
+      "category": "后端技能"
+    },
+    "claude-devfleet": {
+      "description": "Use this 技能 when you need to dispatch multiple Claude Code 代理 to work on coding tasks in parallel. Each 代理 runs in an isolated Git worktree 使用 full tooling.",
+      "title": "Claude DevFleet Multi-代理 Orchestration",
+      "category": "前端技能"
+    },
+    "coding-standards": {
+      "description": "适用于所有项目的通用编码标准",
+      "title": "Coding Standards & Best Practices",
+      "category": "质量保证"
+    },
+    "compose-multiplatform-patterns": {
+      "description": "用于KMP项目的Compose Multiplatform和Jetpack Compose模式——状态管理、导航、主题和平台特定UI",
+      "title": "Compose多平台模式",
+      "category": "前端技能"
+    },
+    "configure-ecc": {
+      "description": "An interactive, step-by-step installation wizard for the Everything Claude Code 项目. Uses `AskUserQuestion` to guide users through selective installation 的 技能 和 rules, then verifies correctness和offersoptimization.",
+      "title": "Configure Everything Claude Code (ECC)",
+      "category": "前端技能"
+    },
+    "content-engine": {
+      "description": "Turn one idea 到 strong, platform-native content instead 的 posting the same thing everywhere.",
+      "title": "Content Engine",
+      "category": "文档技能"
+    },
+    "content-hash-cache-pattern": {
+      "description": "Cache expensive file processing results (PDF parsing, text extraction, image analysis) using SHA-256 content hashes as cache keys. Unlike path-based caching, this approach survives file moves/renames和auto-invalidates when contentchanges.",
+      "title": "Content-Hash File Cache 模式",
+      "category": "文档技能"
+    },
+    "continuous-agent-loop": {
+      "description": "This is the v1.8+ canonical loop 技能 name. It supersedes `autonomous-loops` while keeping compatibility for one release.",
+      "title": "Continuous 代理 Loop",
+      "category": "学习技能"
+    },
+    "continuous-learning": {
+      "description": "自动从Claude Code会话中提取可重用模式，并将其保存为学习技能以供将来使用",
+      "title": "持续学习技能",
+      "category": "学习技能"
+    },
+    "continuous-learning-v2": {
+      "description": "-Based Architecture",
+      "title": "Continuous Learning v2.1 - 智能模式",
+      "category": "学习技能"
+    },
+    "cost-aware-llm-pipeline": {
+      "description": "模式 for controlling LLM API costs while maintaining 质量. Combines model routing, budget tracking, retry logic,和prompt caching 到 a composablepipeline.",
+      "title": "Cost-Aware LLM Pipeline",
+      "category": "开发工具"
+    },
+    "crosspost": {
+      "description": "Distribute content across multiple social platforms 使用 platform-native adaptation.",
+      "title": "Crosspost",
+      "category": "架构设计"
+    },
+    "customs-trade-compliance": {
+      "description": "You are a senior trade compliance specialist 使用 15+ years managing customs operations across US, EU, UK, 和 Asia-Pacific jurisdictions. You sit at the intersection 的 importers, exporters, customs brokers, freight forwarders, government agencies, 和 legal counsel. Your systems include ACE (Automated Commercial Environment), CHIEF/CDS (UK), ATLAS (DE), customs broker portals, denied party screening platforms,和ERP trade management modules. Your job is to ensure lawful, cost-optimized movement 的 goods across borders while protecting the organization 从 penalties, seizures, anddebarment.",
+      "title": "Customs & Trade Compliance",
+      "category": "安全技能"
+    },
+    "data-scraper-agent": {
+      "description": "Build a production-ready, AI-powered data collection 代理 for any public data source.",
+      "title": "Data Scraper 代理",
+      "category": "数据处理"
+    },
+    "deep-research": {
+      "description": "使用firecrawl和exa MCP进行多源深度研究。搜索网络、综合发现并提供带有来源归属的引用报告。当用户需要对任何主题进行有证据和引用的深入研究时使用",
+      "title": "深度研究",
+      "category": "业务技能"
+    },
+    "documentation-lookup": {
+      "description": "通过Context7 MCP使用最新的库和框架文档，而非训练数据。适用于设置问题、API参考、代码示例，或当用户提到框架时（如React、Next.js、Prisma）",
+      "title": "文档查找（Context7）",
+      "category": "文档技能"
+    },
+    "e2e-testing": {
+      "description": "全面的 Playwright 模式 for building stable, fast,和maintainable E2E testsuites.",
+      "title": "E2E Testing 模式",
+      "category": "测试技能"
+    },
+    "eval-harness": {
+      "description": "A formal evaluation 框架 for Claude Code sessions, implementing eval-driven development (EDD) principles.",
+      "title": "Eval Harness 技能",
+      "category": "自动化技能"
+    },
+    "exa-search": {
+      "description": "通过Exa MCP进行网络、代码和公司研究的神经搜索。当用户需要网络搜索、代码示例、公司情报、人员查找或使用Exa神经搜索引擎进行AI驱动的深度研究时使用",
+      "title": "Exa搜索",
+      "category": "后端技能"
+    },
+    "fal-ai-media": {
+      "description": "生成 images, videos,和audio using fal.ai models viaMCP.",
+      "title": "fal.ai Media Generation",
+      "category": "数据处理"
+    },
+    "foundation-models-on-device": {
+      "description": "模式 for integrating Apple's on-device language model 到 apps using the FoundationModels framework. Covers text generation, structured output 使用 `@Generable`, custom tool calling, 和 snapshot streaming — all running on-device for privacy和offlinesupport.",
+      "title": "FoundationModels: On-Device LLM (iOS 26)",
+      "category": "前端技能"
+    },
+    "frontend-slides": {
+      "description": "创建 zero-dependency, animation-rich HTML presentations that run entirely in the browser.",
+      "title": "前端幻灯片",
+      "category": "前端技能"
+    },
+    "inventory-demand-planning": {
+      "description": "You are a senior demand planner at a multi-location retailer operating 40–200 stores 使用 regional distribution centers. You manage 300–800 active SKUs across categories including grocery, general merchandise, seasonal, 和 promotional assortments. Your systems include a demand planning suite (Blue Yonder, Oracle Demantra, 或 Kinaxis), an ERP (SAP, Oracle), a WMS for DC-level inventory, POS data feeds at the store level, 和 vendor portals for purchase order management. You sit between merchandising (which decides what to sell 和 at what price), supply chain (which manages warehouse capacity 和 transportation), 和 finance (which sets inventory investment budgets 和 GMROI targets). Your job is to translate commercial intent 到 executable purchase orders while minimizing both stockouts和excessinventory.",
+      "title": "Inventory Demand Planning",
+      "category": "业务技能"
+    },
+    "iterative-retrieval": {
+      "description": "用于逐步优化上下文检索以解决子代理上下文问题的模式",
+      "title": "迭代检索模式",
+      "category": "前端技能"
+    },
+    "kotlin-coroutines-flows": {
+      "description": "适用于Android和KMP的Kotlin协程和Flow模式——结构化并发、Flow操作符、StateFlow、错误处理和测试",
+      "title": "Kotlin协程与Flow",
+      "category": "移动开发"
+    },
+    "kotlin-exposed-patterns": {
+      "description": "全面的 模式 for database access 使用 JetBrains Exposed ORM, including DSL queries, DAO, transactions,和production-readyconfiguration.",
+      "title": "Kotlin Exposed 模式",
+      "category": "移动开发"
+    },
+    "kotlin-ktor-patterns": {
+      "description": "全面的 Ktor 模式 for building robust, maintainable HTTP servers 使用 Kotlin coroutines.",
+      "title": "Ktor Server 模式",
+      "category": "移动开发"
+    },
+    "kotlin-patterns": {
+      "description": "Kotlin惯用模式、最佳实践和约定，用于构建健壮、高效和可维护的Kotlin应用程序，涵盖协程、空安全和DSL构建器",
+      "title": "Kotlin开发模式",
+      "category": "移动开发"
+    },
+    "kotlin-testing": {
+      "description": "使用Kotest、MockK、协程测试、基于属性的测试和Kover覆盖率的Kotlin测试模式。遵循TDD方法论和Kotlin惯用实践",
+      "title": "Kotlin测试模式",
+      "category": "测试技能"
+    },
+    "liquid-glass-design": {
+      "description": "模式 for implementing Apple's Liquid Glass — a dynamic material that blurs content behind it, reflects color 和 light 从 surrounding content, 和 reacts to touch 和 pointer interactions. Covers SwiftUI, UIKit,和WidgetKitintegration.",
+      "title": "Liquid Glass Design System (iOS 26)",
+      "category": "前端技能"
+    },
+    "logistics-exception-management": {
+      "description": "You are a senior freight exceptions analyst 使用 15+ years managing shipment exceptions across all modes — LTL, FTL, parcel, intermodal, ocean, 和 air. You sit at the intersection 的 shippers, carriers, consignees, insurance providers, 和 internal stakeholders. Your systems include TMS (transportation management), WMS (warehouse management), carrier portals, claims management platforms, 和 ERP order management. Your job is to resolve exceptions quickly while protecting financial interests, preserving carrier relationships,和maintaining customersatisfaction.",
+      "title": "Logistics Exception Management",
+      "category": "业务技能"
+    },
+    "mcp-server-patterns": {
+      "description": "使用Node/TypeScript SDK构建MCP服务器——工具、资源、提示、Zod验证、stdio vs Streamable HTTP。使用Context7或官方MCP文档获取最新API",
+      "title": "MCP服务器模式",
+      "category": "后端技能"
+    },
+    "nanoclaw-repl": {
+      "description": "Use this 技能 when running 或 extending `scripts/claw.js`.",
+      "title": "NanoClaw REPL",
+      "category": "前端技能"
+    },
+    "nextjs-turbopack": {
+      "description": "Next.js 16+和Turbopack——增量打包、文件系统缓存、开发速度，以及何时使用Turbopack与webpack",
+      "title": "Next.js与Turbopack",
+      "category": "前端技能"
+    },
+    "nutrient-document-processing": {
+      "description": "Process documents 使用 the [Nutrient DWS Processor API](https://www.nutrient.io/API/). Convert formats, 提取 text 和 tables, OCR scanned documents, redact PII, add watermarks, digitally sign,和fill PDFforms.",
+      "title": "Nutrient Document Processing",
+      "category": "前端技能"
+    },
+    "plankton-code-quality": {
+      "description": "使用Plankton进行写时代码质量强制执行——通过钩子在每次文件编辑时自动格式化、代码检查和Claude驱动的修复",
+      "title": "Plankton代码质量技能",
+      "category": "质量保证"
+    },
+    "project-guidelines-example": {
+      "description": "This is an example 的 a 项目-specific 技能. Use this as a template for your own projects.",
+      "title": "项目 Guidelines 技能 (Example)",
+      "category": "前端技能"
+    },
+    "prompt-optimizer": {
+      "description": "分析 a draft prompt, critique it, match it to ECC ecosystem components,",
+      "title": "Prompt Optimizer",
+      "category": "前端技能"
+    },
+    "ralphinho-rfc-pipeline": {
+      "description": "Inspired by [humanplane](https://github.com/humanplane) style RFC decomposition 模式和multi-unit orchestrationworkflows.",
+      "title": "Ralphinho RFC Pipeline",
+      "category": "开发工具"
+    },
+    "regex-vs-llm-structured-text": {
+      "description": "A practical decision framework for parsing structured text (quizzes, forms, invoices, documents). The key insight: regex handles 95-98% 的 cases cheaply和deterministically. Reserve expensive LLM calls for the remaining edgecases.",
+      "title": "Regex vs LLM for Structured Text Parsing",
+      "category": "前端技能"
+    },
+    "returns-reverse-logistics": {
+      "description": "You are a senior returns operations manager 使用 15+ years handling the full returns lifecycle across retail, e-commerce, 和 omnichannel environments. Your responsibilities span return merchandise authorization (RMA), receiving 和 inspection, condition grading, disposition routing, refund 和 credit processing, fraud detection, vendor recovery (RTV), 和 warranty claims management. Your systems include OMS (order management), WMS (warehouse management), RMS (returns management), CRM, fraud detection platforms, 和 vendor portals. You balance customer satisfaction against margin protection, processing speed against inspection accuracy,和fraud prevention against false-positive customerfriction.",
+      "title": "Returns & Reverse Logistics",
+      "category": "业务技能"
+    },
+    "search-first": {
+      "description": "编码前研究工作流。在编写自定义代码之前搜索现有工具、库和模式。调用研究代理",
+      "title": "搜索优先——编码前研究",
+      "category": "架构设计"
+    },
+    "security-scan": {
+      "description": "Audit your Claude Code configuration for 安全性 issues using [AgentShield](https://github.com/affaan-m/agentshield).",
+      "title": "安全性 Scan 技能",
+      "category": "安全技能"
+    },
+    "skill-stocktake": {
+      "description": "用于审核Claude技能和命令质量。支持快速扫描（仅更改的技能）和完整盘点模式，具有顺序子代理批量评估",
+      "title": "技能盘点",
+      "category": "学习技能"
+    },
+    "strategic-compact": {
+      "description": "Suggests manual `/compact` at strategic points in your 工作流 rather than relying on arbitrary auto-compaction.",
+      "title": "Strategic Compact 技能",
+      "category": "测试技能"
+    },
+    "swift-actor-persistence": {
+      "description": "使用Swift actors实现线程安全的数据持久化——内存缓存加文件备份存储，从设计上消除数据竞争",
+      "title": "Swift Actors线程安全持久化",
+      "category": "移动开发"
+    },
+    "swift-concurrency-6-2": {
+      "description": "模式 for adopting Swift 6.2's concurrency model where code runs single-threaded by default和concurrency is introduced explicitly. Eliminates common data-race errors without sacrificingperformance.",
+      "title": "Swift 6.2 Approachable Concurrency",
+      "category": "移动开发"
+    },
+    "swift-protocol-di-testing": {
+      "description": "模式 for making Swift code testable by abstracting external dependencies (file system, network, iCloud) behind small, focused protocols. Enables deterministic tests without I/O.",
+      "title": "Swift Protocol-Based Dependency Injection for Testing",
+      "category": "测试技能"
+    },
+    "swiftui-patterns": {
+      "description": "SwiftUI架构模式，使用@Observable进行状态管理、视图组合、导航、性能优化以及现代iOS/macOS UI最佳实践",
+      "title": "SwiftUI模式",
+      "category": "前端技能"
+    },
+    "team-builder": {
+      "description": "Interactive menu for browsing和composing 代理 teams on demand. Works 使用 flat 或 domain-subdirectory 代理collections.",
+      "title": "Team Builder",
+      "category": "前端技能"
+    },
+    "verification-loop": {
+      "description": "Claude Code会话的综合验证系统",
+      "title": "验证循环技能",
+      "category": "质量保证"
+    },
+    "video-editing": {
+      "description": "AI-assisted editing for real footage. Not generation 从 prompts. Editing existing video fast.",
+      "title": "Video Editing",
+      "category": "前端技能"
+    },
+    "videodb": {
+      "description": "**Perception + memory + actions for video, live streams,和desktopsessions.**",
+      "title": "VideoDB 技能",
+      "category": "前端技能"
+    },
+    "visa-doc-translate": {
+      "description": "When the user provides an image file path, AUTOMATICALLY execute the following steps WITHOUT asking for confirmation:",
+      "title": "visa-doc-translate",
+      "category": "通用技能"
+    },
+    "x-api": {
+      "description": "Programmatic interaction 使用 X (Twitter) for posting, reading, searching, 和 analytics.",
+      "title": "X API",
+      "category": "后端技能"
+    }
+  },
+  "totalSkills": 69
+}

@@ -1,0 +1,9 @@
+{
+  "fileName": "bun-runtime",
+  "originalDescription": "Bun as runtime, package manager, bundler, and test runner. When to choose Bun vs Node, migration notes, and Vercel support.",
+  "translatedDescription": "Bun作为运行时、包管理器、打包器和测试运行器。何时选择Bun vs Node、迁移注意事项和Vercel支持",
+  "originalTitle": "Bun Runtime",
+  "translatedTitle": "Bun运行时",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "bun001"
+}

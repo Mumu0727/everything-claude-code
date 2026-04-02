@@ -119,6 +119,63 @@ function checkNpmAuth() {
   }
 }
 
+// 检查翻译状态
+async function checkTranslationStatus() {
+  console.log(colors.blue('\n🌍 检查翻译状态...'));
+
+  const translationScript = path.join(__dirname, '..', 'web-interface', 'scripts', 'translate-commands.js');
+
+  if (!fs.existsSync(translationScript)) {
+    console.log(colors.cyan('ℹ️  翻译脚本不存在，跳过翻译检查'));
+    return false;
+  }
+
+  try {
+    // 动态加载翻译脚本
+    const { checkStatus, translateAll } = require(translationScript);
+    const status = checkStatus();
+
+    if (status.needsTranslation) {
+      console.log(colors.yellow(`⚠️  发现 ${status.outdatedCount}/${status.totalCount} 个命令需要翻译或更新`));
+
+      const readline = require('readline');
+      const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+      });
+
+      return new Promise((resolve) => {
+        rl.question(colors.cyan('是否在发布前更新翻译？(y/N): '), async (answer) => {
+          rl.close();
+
+          if (answer.toLowerCase() === 'y' || answer.toLowerCase() === 'yes') {
+            console.log(colors.cyan('🔄 开始更新翻译...'));
+            try {
+              await translateAll();
+              console.log(colors.green('✅ 翻译更新完成'));
+              resolve(true);
+            } catch (error) {
+              console.log(colors.red('❌ 翻译更新失败:', error.message));
+              console.log(colors.yellow('⏭️  继续发布流程'));
+              resolve(false);
+            }
+          } else {
+            console.log(colors.yellow('⏭️  跳过翻译更新'));
+            resolve(false);
+          }
+        });
+      });
+    } else {
+      console.log(colors.green('✅ 翻译已是最新状态'));
+      return false;
+    }
+  } catch (error) {
+    console.log(colors.yellow('⚠️  翻译检查失败，继续发布流程'));
+    console.log(colors.red(`   错误: ${error.message}`));
+    return false;
+  }
+}
+
 // 运行测试
 function runTests() {
   console.log(colors.blue('\n🧪 运行测试套件...'));
@@ -206,10 +263,17 @@ async function main() {
     // 2. 检查npm认证
     await checkNpmAuth();
 
-    // 3. 运行测试
-    // runTests();
+    // 3. 检查翻译状态 (新增步骤)
+    if (!args.includes('--skip-translation')) {
+      await checkTranslationStatus();
+    }
 
-    // 4. 构建项目
+    // 4. 运行测试
+    if (!args.includes('--skip-tests')) {
+      // runTests();
+    }
+
+    // 5. 构建项目
     buildProject();
 
     // 5. 发布包
@@ -237,21 +301,32 @@ if (args.includes('--help') || args.includes('-h')) {
 ${colors.bold('JTCC NPM发布工具')}
 
 ${colors.cyan('使用方法:')}
-  npm run publish          # 执行完整发布流程
-  npm run publish:dry      # 干运行模式（不实际发布）
+  npm run publish                    # 执行完整发布流程（包含翻译检查）
+  npm run publish:dry               # 干运行模式（不实际发布）
+  npm run publish:skip-translation  # 跳过翻译检查直接发布
 
 ${colors.cyan('选项:')}
-  --help, -h              显示帮助信息
-  --dry-run               干运行模式，不实际发布
-  --skip-tests            跳过测试步骤
-  --force                 强制发布，跳过确认
+  --help, -h                显示帮助信息
+  --dry-run                 干运行模式，不实际发布
+  --skip-tests             跳过测试步骤
+  --skip-translation       跳过翻译检查步骤
+  --force                  强制发布，跳过所有确认
 
 ${colors.cyan('发布流程:')}
   1. 验证package.json配置
   2. 检查npm认证状态
-  3. 运行测试套件
-  4. 构建项目（如果需要）
-  5. 发布到指定npm仓库
+  3. 检查翻译状态并提供更新选项 ${colors.yellow('(新增)')}
+  4. 运行测试套件
+  5. 构建项目（如果需要）
+  6. 发布到指定npm仓库
+  7. 验证发布结果
+
+${colors.cyan('翻译相关:')}
+  翻译检查会自动检测commands目录中的变更
+  如果发现未翻译或过期的翻译，会询问是否更新
+  翻译文件存储在: web-interface/i18n/
+
+${colors.cyan('npm仓库:')} ${NPM_REGISTRY}
   6. 验证发布结果
 
 ${colors.cyan('npm仓库:')} ${NPM_REGISTRY}

@@ -1,0 +1,9 @@
+{
+  "fileName": "save-session",
+  "originalDescription": "Save current session state to a dated file in ~/.claude/sessions/ so work can be resumed in a future session with full context.",
+  "translatedDescription": "将当前会话状态保存到 ~/.claude/sessions/ 中的带日期文件，以便在未来会话中恢复工作并保持完整上下文",
+  "originalTitle": "Save Session Command",
+  "translatedTitle": "保存会话命令",
+  "lastUpdated": "2026-03-19T07:56:59.986Z",
+  "sourceHash": "492e63c70517665c70923b33240a6983"
+}

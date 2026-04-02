@@ -218,6 +218,65 @@ program
     console.log("✅ 配置备份成功！");
   });
 
+// Web界面命令
+program
+  .command("web")
+  .description("启动 JTCC Web 可视化界面")
+  .option('-p, --port <port>', '指定端口', '3000')
+  .option('-h, --host <host>', '指定主机', 'localhost')
+  .option('-d, --daemon', '后台运行')
+  .option('--dev', '开发模式')
+  .option('--no-open', '不自动打开浏览器')
+  .action(async (options) => {
+    console.log("🌐 启动 JTCC Web 界面...");
+
+    try {
+      const path = require('path');
+      const { spawn } = require('child_process');
+
+      // 获取项目根目录
+      const projectRoot = path.resolve(__dirname, '..', '..');
+      const webScript = path.join(projectRoot, 'scripts', 'web-interface.js');
+
+      // 构建参数
+      const args = [];
+      if (options.port) args.push('--port', options.port);
+      if (options.host) args.push('--host', options.host);
+      if (options.daemon) args.push('--daemon');
+      if (options.dev) args.push('--dev');
+      if (!options.open) args.push('--no-open');
+
+      // 启动Web界面
+      const child = spawn('node', [webScript, ...args], {
+        stdio: 'inherit',
+        detached: options.daemon
+      });
+
+      if (options.daemon) {
+        child.unref();
+        console.log(`✅ Web界面已在后台启动`);
+        console.log(`🌐 访问地址: http://${options.host}:${options.port}`);
+        process.exit(0);
+      }
+
+      // 处理前台运行
+      child.on('error', (error) => {
+        console.error('❌ Web界面启动失败:', error.message);
+        process.exit(1);
+      });
+
+      process.on('SIGINT', () => {
+        console.log('\n📡 正在关闭Web界面...');
+        child.kill('SIGTERM');
+        setTimeout(() => process.exit(0), 1000);
+      });
+
+    } catch (error) {
+      console.error('❌ 启动Web界面失败:', error.message);
+      process.exit(1);
+    }
+  });
+
 // 状态命令
 program
   .command("status")

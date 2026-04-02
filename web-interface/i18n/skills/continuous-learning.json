@@ -1,0 +1,9 @@
+{
+  "fileName": "continuous-learning",
+  "originalDescription": "Automatically extract reusable patterns from Claude Code sessions and save them as learned skills for future use.",
+  "translatedDescription": "自动从Claude Code会话中提取可重用模式，并将其保存为学习技能以供将来使用",
+  "originalTitle": "Continuous Learning Skill",
+  "translatedTitle": "持续学习技能",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "learn001"
+}

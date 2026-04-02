@@ -1,0 +1,9 @@
+{
+  "fileName": "doc-updater",
+  "originalDescription": "Documentation and codemap specialist. Use PROACTIVELY for updating codemaps and documentation. Runs /update-codemaps and /update-docs, generates docs/CODEMAPS/*, updates READMEs and guides.",
+  "translatedDescription": "文档和代码图谱专家。主动用于更新代码图谱和文档。运行/update-codemaps和/update-docs，生成docs/CODEMAPS/*，更新README和指南",
+  "originalTitle": "Documentation & Codemap Specialist",
+  "translatedTitle": "文档 & Codemap Specialist",
+  "lastUpdated": "2026-03-19T10:17:52.055Z",
+  "sourceHash": "7d27cdc9800a46e4531939410c87d2f3"
+}

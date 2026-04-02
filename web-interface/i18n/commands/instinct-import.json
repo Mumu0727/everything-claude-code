@@ -1,0 +1,9 @@
+{
+  "fileName": "instinct-import",
+  "originalDescription": "Import instincts from file or URL into project/global scope",
+  "translatedDescription": "从文件或URL导入智能模式到项目或全局作用域",
+  "originalTitle": "Instinct Import Command",
+  "translatedTitle": "智能模式导入命令",
+  "lastUpdated": "2026-03-19T08:07:05.648Z",
+  "sourceHash": "69a7c7c295057a5fe6e234f205aab9b9"
+}

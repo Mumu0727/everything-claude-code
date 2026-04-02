@@ -1,0 +1,9 @@
+{
+  "fileName": "e2e",
+  "originalDescription": "Generate and run end-to-end tests with Playwright. Creates test journeys, runs tests, captures screenshots/videos/traces, and uploads artifacts.",
+  "translatedDescription": "使用Playwright生成并运行端到端测试。创建测试流程，运行测试，捕获截图/视频/跟踪，并上传测试工件",
+  "originalTitle": "E2E Command",
+  "translatedTitle": "端到端测试",
+  "lastUpdated": "2026-03-19T07:56:59.965Z",
+  "sourceHash": "9175bdf47f9ad204070372a266bf4b0a"
+}

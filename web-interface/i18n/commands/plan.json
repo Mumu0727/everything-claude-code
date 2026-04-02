@@ -1,0 +1,9 @@
+{
+  "fileName": "plan",
+  "originalDescription": "Restate requirements, assess risks, and create step-by-step implementation plan. WAIT for user CONFIRM before touching any code.",
+  "translatedDescription": "重申需求，评估风险，创建逐步实施计划。在修改任何代码前等待用户确认",
+  "originalTitle": "Plan Command",
+  "translatedTitle": "计划命令",
+  "lastUpdated": "2026-03-19T07:56:59.978Z",
+  "sourceHash": "aa73d1d2f13748459f2e2b5137af04ff"
+}

@@ -1,0 +1,9 @@
+{
+  "fileName": "iterative-retrieval",
+  "originalDescription": "Pattern for progressively refining context retrieval to solve the subagent context problem",
+  "translatedDescription": "用于逐步优化上下文检索以解决子代理上下文问题的模式",
+  "originalTitle": "Iterative Retrieval Pattern",
+  "translatedTitle": "迭代检索模式",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "retrieval001"
+}

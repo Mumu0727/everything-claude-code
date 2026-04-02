@@ -1,0 +1,9 @@
+{
+  "fileName": "e2e-runner",
+  "originalDescription": "End-to-end testing specialist using Vercel Agent Browser (preferred) with Playwright fallback. Use PROACTIVELY for generating, maintaining, and running E2E tests. Manages test journeys, quarantines flaky tests, uploads artifacts (screenshots, videos, traces), and ensures critical user flows work.",
+  "translatedDescription": "端到端测试专家，使用Vercel Agent Browser（首选）和Playwright备用。主动用于生成、维护和运行E2E测试。管理测试流程，隔离不稳定测试，上传工件（截图、视频、跟踪），确保关键用户流程正常工作",
+  "originalTitle": "E2E Test Runner",
+  "translatedTitle": "端到端测试运行器",
+  "lastUpdated": "2026-03-19T10:17:52.056Z",
+  "sourceHash": "2deb3aa3aabb40548618f4bebc522f4f"
+}

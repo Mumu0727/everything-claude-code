@@ -1,0 +1,9 @@
+{
+  "fileName": "api-design",
+  "originalDescription": "REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs.",
+  "translatedDescription": "REST API设计模式，包括资源命名、状态码、分页、过滤、错误响应、版本控制和生产API的速率限制",
+  "originalTitle": "API Design Patterns",
+  "translatedTitle": "API设计模式",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "api001"
+}

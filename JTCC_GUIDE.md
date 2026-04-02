@@ -38,7 +38,7 @@ npm install -g jtcc --https://maven.jtexpress.com.cn/nexus3/repository/npm-hoste
 
 ```bash
 # 使用插件命令
-\jtcc:jt-status
+\jtcc:status
 
 # 使用 CLI 命令
 jtcc status
@@ -69,16 +69,16 @@ jtcc config
 jtcc backup --name <name>
 
 # 测试驱动开发
-\jtcc:jt-tdd "Create a React component with tests"
+\jtcc:tdd "Create a React component with tests"
 
 # 代码审查
-\jtcc:jt-code-review
+\jtcc:code-review
 
 # 端到端测试
-\jtcc:jt-e2e "Test user login flow"
+\jtcc:e2e "Test user login flow"
 
 # 前端性能优化
-\jtcc:jt-frontend-optimize
+\jtcc:frontend-optimize
 ```
 
 ## 🎯 核心功能
@@ -276,50 +276,50 @@ jtcc update             # 检查并更新到最新版本
 
 ```bash
 # 1. 创建功能规划
-\jtcc:jt-plan "Add user authentication with JWT"
+\jtcc:plan "Add user authentication with JWT"
 
 # 2. 启动 TDD 流程
-\jtcc:jt-tdd "User login component"
+\jtcc:tdd "User login component"
 
 # 3. 运行 E2E 测试
-\jtcc:jt-e2e "User authentication flow"
+\jtcc:e2e "User authentication flow"
 
 # 4. 代码审查
-\jtcc:jt-code-review
+\jtcc:code-review
 
 # 5. 安全检查
-\jtcc:jt-security-review
+\jtcc:security-review
 ```
 
 ### 2. React 开发
 
 ```bash
 # 前端架构模式
-\jtcc:jt-frontend-patterns "State management with Zustand"
+\jtcc:frontend-patterns "State management with Zustand"
 
 # 性能优化
-\jtcc:jt-frontend-optimize
+\jtcc:frontend-optimize
 
 # Next.js 特定优化
-\jtcc:jt-nextjs-turbo "Implement App Router"
+\jtcc:nextjs-turbo "Implement App Router"
 ```
 
 ### 3. 移动端开发
 
 ```bash
 # SwiftUI 开发
-\jtcc:jt-swiftui-patterns "Navigation and data flow"
+\jtcc:swiftui-patterns "Navigation and data flow"
 
 # Kotlin/Android 开发
-\jtcc:jt-kotlin-review
-\jtcc:jt-kotlin-test "ViewModel unit tests"
+\jtcc:kotlin-review
+\jtcc:kotlin-test "ViewModel unit tests"
 ```
 
 ### 4. 物流领域开发
 
 ```bash
 # 物流流程设计
-\jtcc:jt-logistics-flow "Shipment tracking system"
+\jtcc:logistics-flow "Shipment tracking system"
 
 # 使用物流技能
 - carrier-relationship-management: 承运商管理系统

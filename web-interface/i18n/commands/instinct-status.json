@@ -1,0 +1,9 @@
+{
+  "fileName": "instinct-status",
+  "originalDescription": "Show learned instincts (project + global) with confidence levels",
+  "translatedDescription": "显示已学习的智能模式（项目+全局）及其置信度",
+  "originalTitle": "Instinct Status Command",
+  "translatedTitle": "智能模式状态命令",
+  "lastUpdated": "2026-03-19T08:07:05.649Z",
+  "sourceHash": "f55baf292e40e411f02a208f0ddab058"
+}

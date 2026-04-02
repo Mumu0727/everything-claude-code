@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"cd 'c:\\\\Users\\\\muqingkun\\\\Desktop\\\\projectByGit\\\\projectByGit\\\\everything-claude-code'; node test-jtcc.js\")",
+      "Bash(node scripts/install-apply.js --target jtcc-claude-home --profile jtcc-frontend)",
+      "Bash(dir \"c:\\\\Users\\\\muqingkun\\\\.claude\")",
+      "Bash([ ! -d \"c:\\\\\\\\Users\\\\\\\\muqingkun\\\\\\\\.claude\\\\\\\\skills\" ])",
+      "Bash(mkdir -p \"c:\\\\\\\\Users\\\\\\\\muqingkun\\\\\\\\.claude\\\\\\\\skills\")",
+      "Bash(cmd /c manual-install.bat)"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "fileName": "swiftui-patterns",
+  "originalDescription": "SwiftUI architecture patterns, state management with @Observable, view composition, navigation, performance optimization, and modern iOS/macOS UI best practices.",
+  "translatedDescription": "SwiftUI架构模式，使用@Observable进行状态管理、视图组合、导航、性能优化以及现代iOS/macOS UI最佳实践",
+  "originalTitle": "SwiftUI Patterns",
+  "translatedTitle": "SwiftUI模式",
+  "lastUpdated": "2026-03-19T13:05:00.000Z",
+  "sourceHash": "swift001"
+}
