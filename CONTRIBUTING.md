@@ -1,6 +1,6 @@
-# Contributing to Everything Claude Code
+# Contributing to J&T Claude Code (JTCC)
 
-Thanks for wanting to contribute! This repo is a community resource for Claude Code users.
+Thanks for wanting to contribute! This repo is a community resource for frontend developers using Claude Code.
 
 ## Table of Contents
 
@@ -10,8 +10,7 @@ Thanks for wanting to contribute! This repo is a community resource for Claude C
 - [Contributing Agents](#contributing-agents)
 - [Contributing Hooks](#contributing-hooks)
 - [Contributing Commands](#contributing-commands)
-- [MCP and documentation (e.g. Context7)](#mcp-and-documentation-eg-context7)
-- [Cross-Harness and Translations](#cross-harness-and-translations)
+- [MCP and documentation](#mcp-and-documentation)
 - [Pull Request Process](#pull-request-process)
 
 ---

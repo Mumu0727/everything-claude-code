@@ -1,0 +1,24 @@
+schema: spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+Example:
+  context: |
+
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+Example:
+  rules:
+    proposal:
+      - 提案应包含明确的业务价值和技术可行性分析
+
+    design:
+
+    tasks:
+      - 任务拆分粒度: 单个任务不超过 4 小时完成
+      - 关键功能任务需要包含错误处理和边界情况
+
+    spec:
+

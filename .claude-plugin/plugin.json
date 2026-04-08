@@ -1,13 +1,13 @@
 {
-  "name": "everything-claude-code",
-  "version": "1.8.0",
-  "description": "Complete collection of battle-tested Claude Code configs from an Anthropic hackathon winner - agents, skills, hooks, and rules evolved over 10+ months of intensive daily use",
+  "name": "jtcc",
+  "version": "1.0.0",
+  "description": "J&T Claude Code - Frontend-focused AI programming assistant for React, Next.js, and TypeScript",
   "author": {
-    "name": "Affaan Mustafa",
-    "url": "https://x.com/affaanmustafa"
+    "name": "J&T Team",
+    "url": "https://github.com/jt-team"
   },
-  "homepage": "https://github.com/affaan-m/everything-claude-code",
-  "repository": "https://github.com/affaan-m/everything-claude-code",
+  "homepage": "https://github.com/jt-team/jtcc",
+  "repository": "https://github.com/jt-team/jtcc",
   "license": "MIT",
   "keywords": [
     "claude-code",
